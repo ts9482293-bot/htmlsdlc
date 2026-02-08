@@ -1,0 +1,2783 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- bootsrap-icon-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- fontaswome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- fancy-box-js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- bootsrap-css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- custome-css -->
+    <link rel="stylesheet" href="./asset/style8.css" />
+  </head>
+  <body>
+      <!-- nav-sec -->
+      <header class="header-sec" class="luxy-el" data-speed="0.08">
+      <div class="container">
+        <nav class="nav-top">
+          <ul class="nav-top-list">
+            <li>
+              <a
+                data-fancybox
+                data-type="iframe"
+                data-src="https://www.google.com/maps?q=Kolkata&output=embed"
+                href="javascript:;"
+                class="map-btn nav-top-link"
+              >
+                <i class="bi bi-geo-alt"></i>
+                <span
+                  >2nd Floor, Sector V, Salt Lake, Kolkata – 700091, West
+                  Bengal, India</span
+                >
+              </a>
+              <!-- <a href="" class="nav-top-link">
+                <i class="bi bi-geo-alt"></i>
+                <span>657 twin lakes Drive, Reno,NV 89523</span>
+              </a> -->
+            </li>
+            <li>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=support@localpro.com"
+                target="_blank"
+                class="nav-top-link"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                <span>localpro@gmail.com</span>
+              </a>
+            </li>
+            <li class="nav-border">
+              <a
+                data-fancybox
+                data-src="#dailyOpenTime"
+                href="javascript:;"
+                class="nav-top-link"
+              >
+                <i class="fa-regular fa-calendar"></i>
+                <span id="openText">Daily 9am-10pm</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li>
+              <a href="" class="follow-link">Follow Us:</a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/LocalProServices"
+                class="social-link"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/localpro-services"
+                class="social-link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@LocalProServices"
+                class="social-link"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/LocalProServices" class="social-link"
+                ><i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./images/Group 1000004669.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <div
+              class="offcanvas-header"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-x"></i>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="drop-link dropdown-toggle"
+                  href="index3.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="index3.html">Services</a>
+                  </li>
+                  <li><a class="dropdown-item" href="plumber.html">Plumber</a></li>
+                  <li><a class="dropdown-item" href="electrician.html">Electrician</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="cleaner.html">Cleaner</a>
+                  </li>
+                </ul>
+              </li>
+                  <li class="nav-item active">
+                <a class="nav-link" href="index2.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index4.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index5.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="nav-location">
+              <!-- clickable map area -->
+              <div class="location-click">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="location-text">Salt Lake, Kolkata</span>
+              </div>
+
+              <!-- dropdown -->
+              <select class="location-select" id="locationSelect">
+                 <option class="none" value="Salt Lake, Kolkata" >
+                 
+                </option>
+                <option value="Salt Lake, Kolkata" >
+                  Salt Lake, Kolkata
+                </option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Bengaluru</option>
+              </select>
+
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </div>
+            <form action="" class="nav-form">
+              <input
+                type="search"
+                name=""
+                placeholder="Search For Service"
+                id="search"
+              />
+              <div class="serach-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+            <div class="nav-btn">
+              <!-- <a href="" class="primary-btn">Sing In</a> -->
+              <!-- Button trigger modal -->
+              <a
+                data-bs-toggle="modal"
+                class="primary-btn"
+                data-bs-target="#staticBackdrop"
+              >
+                Sign In
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div id="signupLeft" class="modal-content left-modal">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Create an account
+            </h1>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form" id="modalform" novalidate>
+              <div class="row modal-row align-items-center">
+                <div class="col-12">
+                  <div class="input-cont">
+                    <p id="emailError" class="error"></p>
+                    <label class="modal-lable" for="modal-email">Email</label
+                    ><br />
+                    <input
+                      type="email"
+                      id="modal-email"
+                      name="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="passwordError" class="error"></p>
+                    <label class="modal-lable" for="modal-password"
+                      >Password</label
+                    ><br />
+                    <input
+                      type="password"
+                      id="modal-password"
+                      name="password"
+                      placeholder="Enter Your Password"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="confirmPasswordError" class="error"></p>
+                    <label class="modal-lable" for="confirm-password"
+                      >Confirm Password</label
+                    ><br />
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      name="confirm_password"
+                      placeholder="Confirm Your Password"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="addressError" class="error"></p>
+                    <label class="modal-lable" for="address">Address</label
+                    ><br />
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      placeholder="Enter your address"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <a href="" class="apple-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Vector (3).png" alt="" />
+                    </figure>
+                    Apple
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="" class="google-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Google - Original.png" alt="" />
+                    </figure>
+                    Google
+                  </a>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="btn-cont">
+                    <button type="submit" class="modal-btn">
+                      Create account
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="signupRight" class="modal-content right-modal">
+          <div class="modal-right-cont">
+            <div class="right-btn-close">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-header modal-right-header">
+              <div class="modal-cont">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Hey There !
+                </h1>
+                <p>
+                  Sign in to start planning your journeys, save favorites, and
+                  travel with ease.
+                </p>
+              </div>
+              <form action="" class="modal-form" id="modalform">
+                <div class="row modal-row align-items-center">
+                  <div class="input-cont btn-cont">
+                    <button
+                      type="button"
+                      onclick="showLogin()"
+                      class="modal-btn"
+                    >
+                      Sign In
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="loginRight" class="modal-content right-modal log-right-modal">
+          <div class="modal-right-cont">
+            <!-- <div class="right-btn-close">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div> -->
+            <div class="modal-header modal-right-header log-modal-right-header">
+              <div class="modal-cont">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Welcome Back
+                </h1>
+                <p>
+                  Sign up to start planning your journeys, save favorites, and
+                  travel with ease.
+                </p>
+              </div>
+              <form action="" class="modal-form" id="modalform">
+                <div class="row modal-row align-items-center">
+                  <div class="input-cont btn-cont">
+                    <button type="button" onclick="toggleBox()" class="log-btn">
+                      Create account
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="loginLeft" class="modal-content left-modal log-left-cont">
+          <div class="right-btn-close">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-header log-modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Login to your account
+            </h1>
+          </div>
+          <div class="modal-body log-modal-body">
+            <form class="modal-form" id="modalform" novalidate>
+              <div class="row modal-row align-items-center">
+                <!-- Email -->
+                <div class="col-12">
+                  <div class="input-cont">
+                    <p id="emailError" class="error"></p>
+                    <label class="modal-lable" for="modal-email">Email</label
+                    ><br />
+                    <input
+                      type="email"
+                      id="modal-email"
+                      name="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="passwordError" class="error"></p>
+                    <label class="modal-lable" for="modal-password"
+                      >Password</label
+                    ><br />
+                    <input
+                      type="password"
+                      id="modal-password"
+                      name="password"
+                      placeholder="Enter Your Password"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <a href="" class="apple-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Vector (3).png" alt="" />
+                    </figure>
+                    Apple
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="" class="google-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Google - Original.png" alt="" />
+                    </figure>
+                    Google
+                  </a>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12 modal-col">
+                  <div class="btn-cont">
+                    <button type="submit" class="log-modal-btn">
+                      Login Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- banner-sec -->
+      <section class="banner-sec">
+        <div class="container banner-container">
+          <div class="banner-cont">
+            <h1 class="title1">Find Your <span> Consultation</span></h1>
+            <h5 class="title5">
+             Choose a service, select a professional, and schedule your consultation.
+            </h5>
+            <form action="" class="banner-form">
+           <div class="banner-search">
+               <input
+                placeholder="Search best Consultation"
+                type="search"
+                name=""
+                id=""
+                class="banner-input-search"
+              />
+              <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="calendar-icon">
+                <i class="bi bi-calendar-event"></i>
+              </div>
+              <div class="filter-icon">
+                <img src="./imges2/mage_filter.png" alt="">
+              </div>
+           </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="isotop-sec">
+        <div class="container">
+          <div class="filter-menu">
+            <button class="active" data-filter=".plumber">
+              <figure class="btn-icon">
+              <img src="./imges2/map_plumber.png" alt="">
+            </figure>
+            Plumber</button>
+            <button data-filter=".electrician">
+                <figure class="btn-icon">
+              <img src="./imges2/map_electrician.png" alt="">
+            </figure>
+              Electrician</button>
+            <button data-filter=".cleaner">
+               <figure class="btn-icon">
+              <img src="./imges2/mdi_vacuum-cleaner.png" alt="">
+            </figure>
+              Cleaner</button>
+            <button data-filter=".carpenter">
+                  <figure class="btn-icon">
+              <img src="./imges2/material-symbols-light_carpenter.png" alt="">
+            </figure>
+              Carpenter</button>
+            <button data-filter=".mechanic">
+                <figure class="btn-icon">
+              <img src="./imges2/Vector (1).png" alt="">
+            </figure>
+              Mechanic</button>
+            <button data-filter=".gardener">
+               <figure class="btn-icon">
+              <img src="./imges2/Gardener.png" alt="">
+            </figure>
+              Gardener</button>
+            <button data-filter=".ac-technician">
+                   <figure class="btn-icon">
+              <img src="./imges2/hugeicons_smart-ac.png" alt="">
+            </figure>
+              AC Technician</button>
+            <button data-filter=".beauty-spa">
+                 <figure class="btn-icon">
+              <img src="./imges2/map_electrician.png" alt="">
+            </figure>
+              Beauty & Spa</button>
+            <button data-filter=".painter">
+                 <figure class="btn-icon">
+              <img src="./imges2/map_painter.png" alt="">
+            </figure>
+              Painter</button>
+          </div>
+          <div class="grid">
+            <div class="grid-item plumber">
+              <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+                  Showing 6 Of 10 Consultation 
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                            <h5 class="card-title">01 Professional Plumber</h5>
+                        <p>Leak Fixing • Pipe Fitting • Bathroom Repair</p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,449</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (1).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                           <h5 class="card-title">02 Professional Plumber</h5>
+                        <p>
+                          Leak Detection • Pipe Replacement • Bathroom Repair
+                        </p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,399</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (3).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                           <h5 class="card-title">03 Professional Plumber</h5>
+                        <p>Tap Installation • Drain Cleaning • Sink Repair</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,249</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Karnataka
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (13).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                         <h5 class="card-title">04 Professional Plumbe</h5>
+                        <p>Toilet Repair • Water Line Fix • Pipe Fittin</p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,599</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Telangana
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (4).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                          <h5 class="card-title">05 Professional Plumber</h5>
+                        <p>Kitchen Plumbing • Mixer Repair • Leak Fixing</p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,349</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (5).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                            <h5 class="card-title">06 Professional Plumber</h5>
+                        <p>Blocked Drain • Bathroom Fitting • Valve Repair</p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹1,199</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (6).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- electrician -->
+
+            <div class="grid-item electrician">
+                 <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+                 Showing 6 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                             <h5 class="card-title">01 Professional Electrician</h5>
+                        <p>
+                          Fuse Repair • LED Light Fitting • Appliance Wiring
+                        </p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,449</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (7).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                             <h5 class="card-title">02 Professional Electrician</h5>
+                        <p>Home Wiring • MCB Repair • Inverter Setup</p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Karnataka
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (8).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                           <h5 class="card-title">03 Professional Electrician</h5>
+                        <p>
+                          Short Circuit Fix • Light & Fan Repair • New Wiring
+                        </p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,399</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (12).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                           <div class="card-para">
+                              <h5 class="card-title">04 Professional Electrician</h5>
+                        <p>Quick Fix • Safe Wiring • Appliance Setup</p>
+                           </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,649</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Telangana
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (9).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                           <h5 class="card-title">05 Professional Electrician</h5>
+                        <p>Wiring Fix • Fan Installation • Power Socket</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,549</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (10).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                           <h5 class="card-title">06 Professional Electrician</h5>
+                        <p>Wiring • Switch Repair • Lighting Installation</p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (11).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cleaner -->
+            <div class="grid-item cleaner">
+               <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+                 Showing 4 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                            <h5 class="card-title">01 Professional Cleaner</h5>
+                        <p>Deep Home Cleaning • Dust Removal • Sanitization</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,799</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (14).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                           <h5 class="card-title">02 Professional Cleaner</h5>
+                        <p>
+                          Bathroom Cleaning • Tile Scrubbing • Germ Protection
+                        </p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Karnataka
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (15).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                           <h5 class="card-title">03 Professional Cleaner</h5>
+                        <p>
+                          Kitchen Deep Clean • Grease Removal • Chimney Cleaning
+                        </p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,999</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Uttar Pradesh
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (16).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                  <div class="card-para">
+                          <h5 class="card-title">04 Professional Cleaner</h5>
+                        <p>Sofa Cleaning • Carpet Wash • Stain Removal</p>
+                  </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (17).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- carpenter -->
+            <div class="grid-item carpenter">
+                 <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+                 Showing 7 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                              <h5 class="card-title">01 Professional Carpenter</h5>
+                        <p>Furniture Repair • Door Fixing • Hinge Adjustment</p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,199</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (18).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                             <h5 class="card-title">02 Professional Carpenter</h5>
+                        <p>
+                          Modular Furniture Installation • Shelf Mounting •
+                          Alignment
+                        </p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Karnataka
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (19).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                            <h5 class="card-title">03 Professional Carpenter</h5>
+                        <p>Bed Repair • Drawer Fix • Wooden Panel Fitting</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Haryana
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (20).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                          <h5 class="card-title">04 Professional Carpenter</h5>
+                        <p>Custom Woodwork • Cabinet Making • Polish Work</p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 2,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Telangana
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (21).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                           <h5 class="card-title">05 Professional Carpenter</h5>
+                        <p>
+                          Door Lock Fixing • Frame Repair • Handle Installation
+                        </p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,099</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (22).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                            <h5 class="card-title">06 Professional Carpenter</h5>
+                        <p>
+                          Office Furniture Setup • Partition Work • Desk Repair
+                        </p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,899</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (23).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                            <h5 class="card-title">01 Professional Carpenter</h5>
+                        <p>
+                          Kitchen Cabinet Repair • Laminate Fix • Soft-Close
+                          Fitting
+                        </p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,699</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Tamil Nadu
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (24).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mechanic -->
+            <div class="grid-item mechanic">
+                 <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+                Showing 8 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                         <h5 class="card-title">01 Professional Mechanic</h5>
+                        <p>Car HEATING & AC REPAIR</p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 2,399</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (25).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                           <h5 class="card-title">02 Professional Mechanic</h5>
+                        <p>Brakes & Brake Repair</p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,559</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Assam
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (26).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                          <h5 class="card-title">03 Professional Mechanic</h5>
+                        <p>New Tires & Tire Repair</p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 5,999</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (27).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                               <h5 class="card-title">04 Professional Mechanic</h5>
+                        <p>Car Battery Replacement & Charging</p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 4,549</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (28).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                           <h5 class="card-title">05 Professional Mechanic</h5>
+                        <p>Oil Change Service</p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,449</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Gujarat
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (29).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                            <div class="card-para">
+                               <h5 class="card-title">06 Professional Mechanic</h5>
+                        <p>Engine repair</p>
+                            </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,859</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Tamil Nadu
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (30).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                           <h5 class="card-title">07 Professional Mechanic</h5>
+                        <p>General Service</p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 999</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Odisha
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (31).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                             <h5 class="card-title">08 Professional Mechanic</h5>
+                        <p>Car Wash & Car Interior Dry Cleaning</p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,449</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kerala
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (32).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                             <h5 class="card-title">09 Professional Mechanic</h5>
+                        <p>Bike Exterior Cleaning</p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (33).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- gardener -->
+            <div class="grid-item gardener">
+                <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+                Showing 7 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                              <h5 class="card-title">01 Professional Gardener</h5>
+                        <p>Lawn Maintenance • Plant Trimming • Weed Removals</p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,199</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Karnataka
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (53).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                             <h5 class="card-title">02 Professional Gardener</h5>
+                        <p>
+                          Garden Setup • Soil Preparation • Planting Service
+                        </p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,799</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Uttar Pradesh
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (54).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                          <h5 class="card-title">03 Professional Gardener</h5>
+                        <p>Tree Pruning • Hedge Shaping • Waste Clearing</p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499s</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (55).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                          <h5 class="card-title">04 Professional Gardener</h5>
+                        <p>
+                          Terrace Gardening • Pot Arrangement • Drip Irrigation
+                        </p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 2,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Telangana
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (56).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                            <h5 class="card-title">05 Professional Gardener</h5>
+                        <p>Seasonal Plant Care • Fertilizing • Pest Control</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Tamil Nadu
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (57).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                           <h5 class="card-title">06 Professional Gardener</h5>
+                        <p>
+                          Landscape Maintenance • Grass Cutting • Soil Treatment
+                        </p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 2,199</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (58).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                            <h5 class="card-title">07 Professional Gardener</h5>
+                        <p>Indoor Plant Care • Repotting • Leaf Cleaning</p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 999</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Rajasthan
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (59).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                           <h5 class="card-title">08 Professional Gardener</h5>
+                        <p>Lawn Mowing • Edge Trimming • Garden Cleanup</p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,099</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (60).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                      <div class="card-para">
+                            <h5 class="card-title">09 Professional Gardener</h5>
+                        <p>
+                          Plant Health Check • Organic Fertilizing • Mulching
+                        </p>
+                      </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,399</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Gujarat
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (61).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                          <h5 class="card-title">10 Professional Gardener</h5>
+                        <p>
+                          Terrace Garden Care • Pot Replacement • Drain Check
+                        </p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,899</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (62).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ac-technician -->
+            <div class="grid-item ac-technician">
+                <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+               Showing 6 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                             <h5 class="card-title">01 Professional AC Technician</h5>
+                        <p>Foam-jet service (2 ACs)</p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,149</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Goa
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (34).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                          <div class="card-para">
+                             <h5 class="card-title">02 Professional AC Technician</h5>
+                        <p>Foam-jet AC services</p>
+                          </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (35).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                         <h5 class="card-title">03 Professional AC Technician</h5>
+                        <p>Lite AC service</p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 749</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kerala
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (36).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                           <h5 class="card-title">04 Professional AC Technician</h5>
+                        <p>AC uninstallation</p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 549</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Tamil nadu
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (37).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                             <div class="card-para">
+                              <h5 class="card-title">05 Professional AC Technician</h5>
+                        <p>Foam-jet service (3 ACs)</p>
+                             </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,497</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Punjab
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (38).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                         <h5 class="card-title">06 Professional AC Technician</h5>
+                        <p>Gas refill & check-up</p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 2,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (39).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- beauty-spa -->
+            <div class="grid-item beauty-spa">
+                <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+               Showing 6 Of 10 Consultation
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                       <div class="card-para">
+                           <h5 class="card-title">01 Professional Beauty & Spa</h5>
+                        <p>
+                          Hair Spa & Styling • Facial & Skin Care Treatments
+                        </p>
+                       </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (40).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                            <h5 class="card-title">02 Professional Beauty & Spa</h5>
+                        <p>
+                          Deep cleansing & glow facial • Skin polishing &
+                          hydration
+                        </p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Karnataka
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (41).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                    <div class="card-para">
+                            <h5 class="card-title">03 Professional Beauty & Spa</h5>
+                        <p>
+                          Smoothening & damage repair • Professional styling
+                          expertss
+                        </p>
+                    </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,399</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (42).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                                <h5 class="card-title">04 Professional Beauty & Spa</h5>
+                        <p>
+                          Full body relaxation massage • Hand & foot massage
+                        </p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,649s</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Telangana
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (45).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                        <div class="card-para">
+                            <h5 class="card-title">05 Professional Beauty & Spa</h5>
+                        <p>
+                          Nail shaping & cuticle care • Facial & Skin Care
+                          Treatments
+                        </p>
+                        </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,549</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Delhi
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (44).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                              <h5 class="card-title">06 Professional Beauty & Spa</h5>
+                        <p>
+                          Long-lasting premium products • HD & airbrush makeup
+                        </p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Maharashtra
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (46).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Painter -->
+            <div class="grid-item painter">
+                <div class="isotop-header">
+                <h3 class="title3">
+                  available  Consultation
+                </h3>
+                <h5 class="title5">
+               Showing 6 Of 10 Consultation 
+                </h5>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                     <div class="card-para">
+                              <h5 class="card-title">01 Professional Painter</h5>
+                        <p>Protect surfaces with sheets</p>
+                     </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,149s</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Goa
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (47).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                           <h5 class="card-title">02 Professional Painter</h5>
+                        <p>Remove wall hangings and switch</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,499</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (48).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                             <h5 class="card-title">03 Professional Painter</h5>
+                        <p>Cover floors, furniture</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 749</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kerala
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (49).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                           <div class="card-para">
+                             <h5 class="card-title">04 Professional Painter</h5>
+                        <p>Remove grease, dirt, or old paint</p>
+                           </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 549</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Tamil nadu
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (50).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                           <h5 class="card-title">05 Professional Painter</h5>
+                        <p>Dust and wipe down walls</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 1,497</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Punjab
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (51).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-btn-cont">
+                         <div class="card-para">
+                          <h5 class="card-title">06 Professional Painter</h5>
+                        <p>Dust and wipe down walls</p>
+                         </div>
+                        <a href="" class="card-btn">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <h4 class="title4">₹ 2,299</h4>
+                      <p>
+                        <span class="catd-icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        Kolkata
+                      </p>
+                      <div class="card-img">
+                        <img src="./imges2/Frame 1261155722 (52).png" alt="" />
+                        <div class="cart-box">
+                          <figure class="cart-icon">
+                            <i class="bi bi-cart-fill"></i>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer-sec -->
+    <footer class="luxy-el footer-sec" data-speed="0.06">
+      <div class="container">
+        <div class="luxy-el footer-header" data-speed="-0.1">
+          Subscribe Our Newsletter
+        </div>
+        <form action="" class="footer-form">
+          <div class="footer-form-cont">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email"
+              name=""
+              id=""
+            />
+            <button type="submit" id="submit">
+              Subscribe <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+        <div class="row align-items-center">
+          <div class="col-20">
+            <div class="footer-main-cont">
+              <div class="footer-logo">
+                <a href=""
+                  ><img src="./images/Group 1000004670.png" alt=""
+                /></a>
+              </div>
+              <p>
+                LocalPro is your trusted platform for booking reliable home
+                services—anytime, anywhere. Whether you need a plumber,
+                electrician, technician,
+              </p>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/LocalProServices"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/localpro-services"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@LocalProServices"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/LocalProServices"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Site Links</div>
+              <ul>
+                <li><a href="index4.html" class="footer-link">Blog</a></li>
+                <li><a href="index5.html" class="footer-link">Contct Us</a></li>
+                <li><a href="" class="footer-link">Jobs</a></li>
+                <li>
+                  <a href="index3.html" class="footer-link">Categories</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Popular Cities</div>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Delhi&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                    >Dehli</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Mumbai&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                    >Mumbai</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Salt+Lake+Kolkata&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Kolkata
+                  </a>
+                </li>
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Bengaluru&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                    >Bengaluru</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Categories</div>
+              <ul>
+                <li><a href="" class="footer-link">Plumber</a></li>
+                <li><a href="" class="footer-link">House Cleaning</a></li>
+                <li><a href="" class="footer-link">Electrician</a></li>
+                <li><a href="" class="footer-link">AC technician</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Contact Info</div>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=India&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    India
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+912345678780" class="footer-link">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    +91 23456 78780
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+913556484550" class="footer-link">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    +91 35564 84550
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&to=support@localpro.com"
+                    target="_blank"
+                    class="footer-link"
+                  >
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    localpro@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-lower-cont">
+            <div class="row footer-row align-items-center">
+              <div
+                class="footer-col col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12"
+              >
+                <div class="side-box">
+                  <div class="left-side"><a href="">Copyright 2025</a></div>
+                  <div class="right-side">
+                    <a href="">Aone Theme. All Right Reserved</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="footer-col col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12"
+              >
+                <div class="footer-low-img-cont">
+                  <div class="footer-lower-img">
+                    <a href=""><img src="./images/image 72.png" alt="" /></a>
+                  </div>
+                  <div class="footer-lower-img">
+                    <a href=""><img src="./images/card-img2.png" alt="" /></a>
+                  </div>
+                  <div class="footer-lower-img">
+                    <a href=""> <img src="./images/736785 2.png" alt="" /></a>
+                  </div>
+                  <div class="footer-lower-img">
+                    <a href=""><img src="./images/image 71.png " alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 🔽 Fancybox hidden content (HERE) -->
+    <div style="display: none" id="dailyOpenTime">
+      <div class="time-popup">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Mon – Fri: 09:00 AM – 10:00 PM</li>
+          <li>Saturday: 09:00 AM – 08:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+      <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- swiper-js -->
+    <!-- venila-js -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- fancy-box-js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- isotop-css -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom-js -->
+    <script src="./js/script8.js"></script>
+  </body>
+</html>
