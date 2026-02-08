@@ -189,32 +189,28 @@ var swiper6 = new Swiper(".blog-swiper", {
     };
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
+
+
+  // 🔒 IMPORTANT: scoped selectors
+ document.addEventListener("DOMContentLoaded", function () {
 
   const loginBtn = document.querySelector("#loginLeft .log-modal-btn");
-  if (!loginBtn) {
-    console.error("Login button not found");
-    return;
-  }
+  if (!loginBtn) return;
 
   const form = loginBtn.closest("form");
   const otpModal = document.getElementById("otpModal");
   const otpEmail = document.getElementById("otpEmail");
 
-  if (!form || !otpModal) {
-    console.error("Form or OTP modal missing");
-    return;
-  }
+  if (!form || !otpModal) return;
 
-  // 🔒 IMPORTANT: scoped selectors
   const emailInput = form.querySelector('input[name="email"]');
   const passwordInput = form.querySelector('input[name="password"]');
 
-  const emailError = form.querySelector(".error#emailError");
-  const passwordError = form.querySelector(".error#passwordError");
+  const emailError = form.querySelector("#emailError");
+  const passwordError = form.querySelector("#passwordError");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop reload
+    e.preventDefault();
 
     let isValid = true;
 
@@ -229,12 +225,6 @@ var swiper6 = new Swiper(".blog-swiper", {
       isValid = false;
     }
 
-<<<<<<< HEAD
-      // ✅ SUCCESS (NO REFRESH)
-      console.log("Login successful");
-      console.log("Email:", emailInput.value);
-      console.log("Password:", passwordInput.value);
-=======
     if (!passwordInput.value.trim()) {
       passwordError.textContent = "Password is required";
       isValid = false;
@@ -242,19 +232,19 @@ var swiper6 = new Swiper(".blog-swiper", {
 
     if (!isValid) return;
 
+    // ✅ SUCCESS
+    console.log("Login successful");
+    console.log("Email:", emailInput.value);
+
     // ✅ SHOW OTP MODAL
     otpModal.style.display = "flex";
     otpEmail.textContent = emailInput.value;
->>>>>>> 8407c2b (update changes)
-
-    console.log("✅ OTP modal opened");
   });
 
-<<<<<<< HEAD
-=======
 });
 
->>>>>>> 8407c2b (update changes)
+
+
 // singup form
 
 document.getElementById("modalform").addEventListener("submit", function (e) {
@@ -452,8 +442,3 @@ AOS.init({
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 
-luxy.init({
-  wrapper: "#luxy",
-  targets: ".luxy-el",
-  wrapperSpeed: 0.08,
-});
