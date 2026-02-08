@@ -191,7 +191,7 @@ var swiper6 = new Swiper(".blog-swiper", {
 
 
 
-  // 🔒 IMPORTANT: scoped selectors
+  // login form
  document.addEventListener("DOMContentLoaded", function () {
 
   const loginBtn = document.querySelector("#loginLeft .log-modal-btn");

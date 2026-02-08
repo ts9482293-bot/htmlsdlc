@@ -495,7 +495,16 @@ nav,
   top: 25%;
   left: 5%;
 }
-
+.form-drop{
+      width: 556px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin: 0 auto 24px;
+    background: var(--email-background-color);
+}
 /* media-quarry */
 
 @media screen and (max-width: 1330px) {
@@ -538,6 +547,9 @@ nav,
   }
   #search {
     max-width: 196px;
+  }
+  .form-drop{
+    width: 408px;
   }
 }
 @media screen and (max-width: 1110px) {
@@ -615,6 +627,9 @@ nav,
 @media screen and (max-width: 576px) {
   .nav-logo {
     max-width: 30px;
+  }
+    .form-drop{
+    width: 250px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -863,6 +878,7 @@ border-bottom-right-radius: 20px;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin: 0 auto;
 }
 .google-btn::after,
 .google-btn::before {

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - LocalPro</title>
+       <!-- bootsrap-icon-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- fontaswome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- fancy-box-js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- bootsrap-css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./asset/checkout2.css">
+      <!-- navbar-css -->
+     <link rel="stylesheet" href="./asset/navbar.css">
+     <!-- footer-css -->
+      <link rel="stylesheet" href="./asset/footer.css">
+</head>
+
+<body>
+    <!-- nav-sec -->
+    <header class="header-sec" class="luxy-el" data-speed="0.08">
+      <div class="container">
+        <nav class="nav-top">
+          <ul class="nav-top-list">
+            <li>
+              <a
+                data-fancybox
+                data-type="iframe"
+                data-src="https://www.google.com/maps?q=Kolkata&output=embed"
+                href="javascript:;"
+                class="map-btn nav-top-link"
+              >
+                <i class="bi bi-geo-alt"></i>
+                <span
+                  >2nd Floor, Sector V, Salt Lake, Kolkata – 700091, West
+                  Bengal, India</span
+                >
+              </a>
+              <!-- <a href="" class="nav-top-link">
+                <i class="bi bi-geo-alt"></i>
+                <span>657 twin lakes Drive, Reno,NV 89523</span>
+              </a> -->
+            </li>
+            <li>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=support@localpro.com"
+                target="_blank"
+                class="nav-top-link"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                <span>localpro@gmail.com</span>
+              </a>
+            </li>
+            <li class="nav-border">
+              <a
+                data-fancybox
+                data-src="#dailyOpenTime"
+                href="javascript:;"
+                class="nav-top-link"
+              >
+                <i class="fa-regular fa-calendar"></i>
+                <span id="openText">Daily 9am-10pm</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li>
+              <a href="" class="follow-link">Follow Us:</a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/LocalProServices"
+                class="social-link"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/localpro-services"
+                class="social-link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@LocalProServices"
+                class="social-link"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/LocalProServices" class="social-link"
+                ><i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./images/Group 1000004669.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <div
+              class="offcanvas-header"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-x"></i>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="drop-link dropdown-toggle"
+                  href="index3.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="index3.html"
+                      >Services Provider</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="plumber.html">Plumber</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="electrician.html"
+                      >Electrician</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="cleaner.html">Cleaner</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index2.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index4.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index5.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="nav-location">
+              <!-- clickable map area -->
+              <div class="location-click">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="location-text">Salt Lake, Kolkata</span>
+              </div>
+
+              <!-- dropdown -->
+              <select class="location-select" id="locationSelect">
+                <option class="none" value="Salt Lake, Kolkata"></option>
+                <option value="Salt Lake, Kolkata">Salt Lake, Kolkata</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Bengaluru</option>
+              </select>
+
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </div>
+            <form action="" class="nav-form">
+              <input
+                type="search"
+                name=""
+                placeholder="Search For Service"
+                id="search"
+              />
+              <div class="serach-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+            <div class="nav-btn">
+              <!-- <a href="" class="primary-btn">Sing In</a> -->
+              <!-- Button trigger modal -->
+              <a
+                data-bs-toggle="modal"
+                class="primary-btn"
+                data-bs-target="#staticBackdrop"
+              >
+                Sign In
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div id="signupLeft" class="modal-content left-modal">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Create an account
+            </h1>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form" id="modalform" novalidate>
+              <div class="row modal-row align-items-center">
+                <div class="col-12">
+                  <div class="input-cont">
+                    <p id="emailError" class="error"></p>
+                    <label class="modal-lable" for="modal-email">Email</label
+                    ><br />
+                    <input
+                      type="email"
+                      id="modal-email"
+                      name="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="passwordError" class="error"></p>
+                    <label class="modal-lable" for="modal-password"
+                      >Password</label
+                    ><br />
+                    <input
+                      type="password"
+                      id="modal-password"
+                      name="password"
+                      placeholder="Enter Your Password"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="confirmPasswordError" class="error"></p>
+                    <label class="modal-lable" for="confirm-password"
+                      >Confirm Password</label
+                    ><br />
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      name="confirm_password"
+                      placeholder="Confirm Your Password"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="addressError" class="error"></p>
+                    <label class="modal-lable" for="address">Add Role</label
+                    ><br />
+                    <select class="form-drop" id="">
+                      <option value="Salt Lake, Kolkata">
+                        Choose Your Role
+                      </option>
+                      <option>User</option>
+                      <option>Provider</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- <div class="col-6">
+                  <a href="" class="apple-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Vector (3).png" alt="" />
+                    </figure>
+                    Apple
+                  </a>
+                </div> -->
+                <div class="col-12">
+                  <a href="" class="google-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Google - Original.png" alt="" />
+                    </figure>
+                    Google
+                  </a>
+                </div>
+
+                <div class="col-12 modal-col">
+                  <div class="btn-cont">
+                    <button type="submit" class="modal-btn">
+                      Create account
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="signupRight" class="modal-content right-modal">
+          <div class="modal-right-cont">
+            <div class="right-btn-close">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-header modal-right-header">
+              <div class="modal-cont">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Hey There !
+                </h1>
+                <p>
+                  Sign in to start planning your journeys, save favorites, and
+                  travel with ease.
+                </p>
+              </div>
+              <form action="" class="modal-form" id="modalform">
+                <div class="row modal-row align-items-center">
+                  <div class="input-cont btn-cont">
+                    <button
+                      type="button"
+                      onclick="showLogin()"
+                      class="modal-btn"
+                    >
+                      Sign In
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="loginRight" class="modal-content right-modal log-right-modal">
+          <div class="modal-right-cont">
+            <!-- <div class="right-btn-close">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div> -->
+            <div class="modal-header modal-right-header log-modal-right-header">
+              <div class="modal-cont">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Welcome Back
+                </h1>
+                <p>
+                  Sign up to start planning your journeys, save favorites, and
+                  travel with ease.
+                </p>
+              </div>
+              <form action="" class="modal-form" id="modalform">
+                <div class="row modal-row align-items-center">
+                  <div class="input-cont btn-cont">
+                    <button type="button" onclick="toggleBox()" class="log-btn">
+                      Create account
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="loginLeft" class="modal-content left-modal log-left-cont">
+          <div class="right-btn-close">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-header log-modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Login to your account
+            </h1>
+          </div>
+          <div class="modal-body log-modal-body">
+            <form class="modal-form" id="modalform" novalidate>
+              <div class="row modal-row align-items-center">
+                <!-- Email -->
+                <div class="col-12">
+                  <div class="input-cont">
+                    <p id="emailError" class="error"></p>
+                    <label class="modal-lable" for="modal-email">Email</label
+                    ><br />
+                    <input
+                      type="email"
+                      id="modal-email"
+                      name="email"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="col-12 modal-col">
+                  <div class="input-cont">
+                    <p id="passwordError" class="error"></p>
+                    <label class="modal-lable" for="modal-password"
+                      >Password</label
+                    ><br />
+                    <input
+                      type="password"
+                      id="modal-password"
+                      name="password"
+                      placeholder="Enter Your Password"
+                    />
+                  </div>
+                </div>
+
+                <!-- <div class="col-6">
+                  <a href="" class="apple-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Vector (3).png" alt="" />
+                    </figure>
+                    Apple
+                  </a>
+                </div> -->
+                <div class="col-12">
+                  <a href="" class="google-btn">
+                    <figure class="apple-img">
+                      <img src="./imges2/Google - Original.png" alt="" />
+                    </figure>
+                    Google
+                  </a>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12 modal-col">
+                  <div class="btn-cont">
+                    <button type="submit" class="log-modal-btn">
+                      Login Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Checkout</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Checkout</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-wrapper">
+                <!-- Left Side - Form -->
+                <div class="checkout-form">
+                    <form id="checkoutForm">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First name</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="First name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last name</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="streetAddress">Street address</label>
+                            <input type="text" id="streetAddress" name="streetAddress" required
+                                placeholder="House number or street name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber">phone number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required
+                                placeholder="Enter phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slot">Slot</label>
+                            <input type="text" id="slot" name="slot" value="9:00 Am - 10:00 Am" required
+                                placeholder="Select time slot">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right Side - Summary and Additional Services -->
+                <div class="checkout-sidebar">
+                    <!-- Frequently Added Together -->
+                    <div class="frequently-added card">
+                        <h3>Frequently added together</h3>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <div class="service-info">
+                                    <h4>Bathroom Wiper</h4>
+                                    <p class="price">₹ 118</p>
+                                </div>
+                                <img src="./Img/bathroom-cleaner.png" alt="Bathroom Wiper">
+                            </div>
+                            <div class="service-card">
+                                <div class="service-info">
+                                    <h4>Toilet Bowl Cleaner</h4>
+                                    <p class="price">₹ 118</p>
+                                </div>
+                                <img src="./Img/Toilet-wrapper.png" alt="Toilet Bowl Cleaner">
+                            </div>
+                            <div class="service-card">
+                                <div class="service-info">
+                                    <h4>Professional Plumber</h4>
+                                    <p class="price">₹ 118</p>
+                                </div>
+                                <img src="./Img/plumber.png" alt="Professional Plumber">
+                            </div>
+                            <div class="service-card">
+                                <div class="service-info">
+                                    <h4>Professional Cleaner</h4>
+                                    <p class="price">₹ 118</p>
+                                </div>
+                                <img src="./Img/cleaner.png" alt="Professional Cleaner">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Avoid Calling Info -->
+                    <div class="info-box">
+                        <input type="checkbox" id="avoidCalling" checked>
+                        <label for="avoidCalling">Avoid calling before reaching the location</label>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <!-- Coupons and Offers -->
+                    <div class="coupons-box">
+                        <div class="coupon-header">
+                            <i class="fas fa-tag"></i>
+                            <span>Coupons and offers</span>
+                        </div>
+                        <a href="#" class="offers-link">5 offers <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <!-- Payment Summary -->
+                    <div class="payment-summary card">
+                        <h3>Payment summary</h3>
+                        <div class="summary-row">
+                            <span>Item total</span>
+                            <span><span class="strike">₹ 3,694</span> <strong>₹ 2,694</strong></span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tip</span>
+                            <span>₹ 2,694</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Taxes and Fee</span>
+                            <span>₹ 129</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Taxes and Fee</span>
+                            <span>₹ 129</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Amount to pay</span>
+                            <span>₹ 2,898</span>
+                        </div>
+
+                        <!-- Tip Section -->
+                        <div class="tip-section">
+                            <h4>Add a tip to thank the Professional</h4>
+                            <div class="tip-buttons">
+                                <button class="tip-btn" data-amount="50">₹ 50</button>
+                                <button class="tip-btn" data-amount="75">₹ 75</button>
+                                <button class="tip-btn" data-amount="100">₹ 100</button>
+                                <button class="tip-btn custom">Custom</button>
+                            </div>
+                            <p class="tip-note">100% of the tip goes to the professional.</p>
+                        </div>
+                    </div>
+
+                    <!-- Final Amount -->
+                    <div class="final-payment card">
+                        <div class="amount-display">
+                            <span class="label">Amount to pay</span>
+                            <span class="amount">₹ 2,823</span>
+                        </div>
+                        <a href="#" class="view-breakups">View breakups</a>
+                        <button class="btn-proceed" id="proceedBtn">Proceed to pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+  <!-- footer-sec -->
+    <footer class="luxy-el footer-sec" data-speed="0.06">
+      <div class="container">
+        <div class="luxy-el footer-header" data-speed="-0.1">
+          Subscribe Our Newsletter
+        </div>
+        <form action="" class="footer-form">
+          <div class="footer-form-cont">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email"
+              name=""
+              id=""
+            />
+            <button type="submit" id="submit">
+              Subscribe <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+        <div class="row align-items-center">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
+            <div class="footer-main-cont">
+              <div class="footer-logo">
+                <a href=""
+                  ><img src="./images/Group 1000004670.png" alt=""
+                /></a>
+              </div>
+              <p>
+                LocalPro is your trusted platform for booking reliable home
+                services—anytime, anywhere. Whether you need a plumber,
+                electrician, technician,
+              </p>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/LocalProServices"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/localpro-services"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@LocalProServices"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/LocalProServices"
+                      class="footer-social-link"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Site Links</div>
+              <ul>
+                <li><a href="index4.html" class="footer-link">Blog</a></li>
+                <li><a href="index5.html" class="footer-link">Contct Us</a></li>
+                <li><a href="" class="footer-link">Jobs</a></li>
+                <li>
+                  <a href="index3.html" class="footer-link">Categories</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Popular Cities</div>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Howrah+West+Bengal&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Howrah
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Salt+Lake+Kolkata&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Salt Lake
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Newtown+Kolkata&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Newtown
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Alipore+Kolkata&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Alipore
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Categories</div>
+              <ul>
+                <li><a href="" class="footer-link">Plumber</a></li>
+                <li><a href="" class="footer-link">House Cleaning</a></li>
+                <li><a href="" class="footer-link">Electrician</a></li>
+                <li><a href="" class="footer-link">AC technician</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12">
+            <div class="footer-cont">
+              <div class="footer-cont-header">Contact Info</div>
+              <ul>
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=India&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    India
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+912345678780" class="footer-link">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    +91 23456 78780
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+913556484550" class="footer-link">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    +91 35564 84550
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&to=support@localpro.com"
+                    target="_blank"
+                    class="footer-link"
+                  >
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    localpro.services.kolkata@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-lower-cont">
+            <div class="row footer-row align-items-center">
+              <div
+                class="footer-col col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12"
+              >
+                <div class="side-box">
+                  <div class="left-side"><a href="privacy.html">Copyright 2025</a></div>
+                  <div class="right-side">
+                    <a href="term.html">Aone Theme. All Right Reserved</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="footer-col col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12"
+              >
+                <div class="footer-low-img-cont">
+                  <div class="footer-lower-img">
+                    <a href=""><img src="./images/image 72.png" alt="" /></a>
+                  </div>
+                  <div class="footer-lower-img">
+                    <a href=""><img src="./images/card-img2.png" alt="" /></a>
+                  </div>
+                  <div class="footer-lower-img">
+                    <a href=""> <img src="./images/736785 2.png" alt="" /></a>
+                  </div>
+                  <div class="footer-lower-img">
+                    <a href=""><img src="./images/image 71.png " alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 🔽 Fancybox hidden content (HERE) -->
+    <div style="display: none" id="dailyOpenTime">
+      <div class="time-popup">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Mon – Fri: 09:00 AM – 10:00 PM</li>
+          <li>Saturday: 09:00 AM – 08:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Custom Tip Modal -->
+    <div class="modal" id="customTipModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Enter Custom Tip Amount</h3>
+            <input type="number" id="customTipInput" placeholder="Enter amount">
+            <button class="btn-confirm" id="confirmTip">Confirm</button>
+        </div>
+    </div>
+      <!-- fancy-box-js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- swiper-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- bootsrap-js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+     <!-- navbar-js -->
+     <script src="./js/services-details.js"></script>
+     <!-- cutom-js -->
+    <!-- <script src="./js/checkout2.js"></script> -->
+</body>
+
+</html>

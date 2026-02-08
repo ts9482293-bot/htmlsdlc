@@ -87,10 +87,7 @@ ul {
   color: var(--header-color);
   font-size: 36px;
   font-weight: 500;
-}
-.footer-form {
-  text-align: center;
-  margin: 32px 0 55px;
+  margin: 20px auto 30px;
 }
 .footer-form-cont {
   max-width: 774px;
@@ -166,6 +163,9 @@ ul {
 }
 .footer-social-link:hover {
   transform: translateY(-30%);
+}
+.footer-main-cont{
+  margin: 30px auto 0;
 }
 .footer-main-cont > p {
   color: var(--social-color);
@@ -279,7 +279,7 @@ ul {
   }
   .footer-main-cont {
     max-width: 248px;
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
 
   /* ------ END FOOTER SECTION ------ */
