@@ -826,6 +826,7 @@ border-bottom-right-radius: 20px;
   height: 450px;
   border: none;
   background: var(--card-color);
+  cursor: pointer;
 }
 .card-img {
   max-width: 648px;
@@ -833,7 +834,12 @@ border-bottom-right-radius: 20px;
   position: relative;
    margin-bottom: 30px;
 }
-.card-img > img {
+.card-img>a{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card-img>a>img {
   width: 100%;
   height: 100%;
   object-fit: cover;

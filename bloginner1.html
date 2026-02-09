@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fontaswome-cdn -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog inner page</title>
+  <!-- Fontaswome-cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,34 +13,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     <!-- bootsrap-icon-cdn -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-  />
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- fancy-box-js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!-- swiper-css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-       <!-- fancy-box-js -->
+    <!-- bootsrap-icon-cdn -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <!-- bootstrap-css -->
+    <!-- bootsrap-link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <!-- custom-link -->
-    <link rel="stylesheet" href="./asset/style4.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- nav-sec -->
+  <!-- custom-css -->
+  <link rel="stylesheet" href="./asset/bloginner1.css" />
+  <!-- navbar-css -->
+   <link rel="stylesheet" href="./asset/navbar.css">
+   <!-- footer-css -->
+    <link rel="stylesheet" href="./asset/footer.css">
+</head>
+
+<body>
+  <!-- nav-sec -->
     <header class="header-sec" class="luxy-el" data-speed="0.08">
       <div class="container">
         <nav class="nav-top">
@@ -162,17 +173,25 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="index3.html">Services</a>
+                    <a class="dropdown-item" href="index3.html"
+                      >Services Provider</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="plumber.html">Plumber</a></li>
-                  <li><a class="dropdown-item" href="electrician.html">Electrician</a></li>
+                  <li>
+                    <a class="dropdown-item" href="plumber.html">Plumber</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="electrician.html"
+                      >Electrician</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="cleaner.html">Cleaner</a>
                   </li>
                 </ul>
               </li>
-                  <li class="nav-item active">
+              <li class="nav-item active">
                 <a class="nav-link" href="index2.html">About Us</a>
               </li>
               <li class="nav-item">
@@ -191,12 +210,8 @@
 
               <!-- dropdown -->
               <select class="location-select" id="locationSelect">
-                 <option class="none" value="Salt Lake, Kolkata" >
-                 
-                </option>
-                <option value="Salt Lake, Kolkata" >
-                  Salt Lake, Kolkata
-                </option>
+                <option class="none" value="Salt Lake, Kolkata"></option>
+                <option value="Salt Lake, Kolkata">Salt Lake, Kolkata</option>
                 <option>Delhi</option>
                 <option>Mumbai</option>
                 <option>Bengaluru</option>
@@ -297,26 +312,27 @@
                 <div class="col-12 modal-col">
                   <div class="input-cont">
                     <p id="addressError" class="error"></p>
-                    <label class="modal-lable" for="address">Address</label
+                    <label class="modal-lable" for="address">Add Role</label
                     ><br />
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      placeholder="Enter your address"
-                    />
+                    <select class="form-drop" id="">
+                      <option value="Salt Lake, Kolkata">
+                        Choose Your Role
+                      </option>
+                      <option>User</option>
+                      <option>Provider</option>
+                    </select>
                   </div>
                 </div>
 
-                <div class="col-6">
+                <!-- <div class="col-6">
                   <a href="" class="apple-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Vector (3).png" alt="" />
                     </figure>
                     Apple
                   </a>
-                </div>
-                <div class="col-6">
+                </div> -->
+                <div class="col-12">
                   <a href="" class="google-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Google - Original.png" alt="" />
@@ -452,15 +468,15 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <!-- <div class="col-6">
                   <a href="" class="apple-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Vector (3).png" alt="" />
                     </figure>
                     Apple
                   </a>
-                </div>
-                <div class="col-6">
+                </div> -->
+                <div class="col-12">
                   <a href="" class="google-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Google - Original.png" alt="" />
@@ -483,323 +499,214 @@
         </div>
       </div>
     </div>
-   <main>
-    <!-- banner-sec -->
-     <section class="banner-sec">
-      <div class="container banner-container">
-        <div class="row align-items-center">
-          <div class="col-xxl-8 col-xl-8 col-lg-8 col-12">
-          <div class="banner-cont">
-              <h1 class="title1">
-              Our blogs
-            </h1>
-            <a href="index.html" class="blog-header">
-              Home/Blog
-            </a>
-          </div>
-            
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-12">
-            <div class="banner-img">
-              <img src="./asstest/Mask group.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-     </section>
-          <!-- ====card-section==== -->
-     <section class="card-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-50">
-            <div class="card">
-              <div class="card-img">
-               <a href="bloginner1.html"> <img src="./asstest/card -img-1.jpg" alt="card-img-1" /></a>
-                <div class="card-arrow">
-                  <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                </div>
-              </div>
-              <h6>Tips To Troubleshooting Common Plumbing Issues</h6>
-              <p>
-                Phasellus faucibus scelerisque eleifend donec pretium vulputate.
-                Ac orci...
-              </p>
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="card">
-              <div class="card-img">
-                <a href="innerblog2.html"><img src="./asstest/card-img-2.jpg" alt="card-img-1" /></a>
-                <div class="card-arrow">
-                  <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                </div>
-              </div>
-              <h6>Knowing When to DIY and When to Call a Pro</h6>
-              <p>
-                Arcu risus quis varius quam. Tristique sollicitudin nibh sit
-                amet commodo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-50">
-            <div class="card">
-              <div class="card-img">
-               <a href="innerblog3.html"> <img src="./asstest/card-img-3.jpg" alt="card-img-1" /></a>
-                <div class="card-arrow">
-                  <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                </div>
-              </div>
-              <h6>Transforming Spaces with Professional Painting Services</h6>
-              <p>
-                A well-executed painting project can completely transform the
-                look and feel of any space.
-              </p>
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="card">
-              <div class="card-img">
-               <a href="innerblog4.html"> <img src="./asstest/card-img-4.jpg" alt="card-img-1" /></a>
-                <div class="card-arrow">
-                  <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                </div>
-              </div>
-              <h6>Home Cleaning Service Guide: Everything You Need To Know</h6>
-              <p>
-                A home cleaning service is paid help that either comes on a
-                schedule of your choice or as a one-time visit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- quote -->
-    <section class="quote-sec">
-      <div class="container">
-        <div class="quote-header">
-          <h2 class="title2">Request a Quote</h2>
-          <h4 class="title4">For Free Estimate!</h4>
-        </div>
-        <form action="" class="quote-form">
-          <div class="row">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-              <input
-                type="text"
-                placeholder="Your Name"
-                class="quote-input"
-                name=""
-                id=""
-              />
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-              <input
-                type="email"
-                placeholder="Email id"
-                class="quote-input"
-                name=""
-                id=""
-              />
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-              <input
-                type="text"
-                placeholder="Home Address"
-                class="quote-input"
-                name=""
-                id=""
-              />
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  select your work type
-                  <span class="drop-icon">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </span>
-                </button>
-                <ul class="dropdown-menu drop-list">
-                  <li><a class="dropdown-item" href="#">plumber</a></li>
-                  <li><a class="dropdown-item" href="index6.html">Electrician</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Cleaner</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="dropdown work-drop">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  select  Date
-                  <span class="drop-icon">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </span>
-                </button>
-                <ul class="dropdown-menu drop-list">
-                  <li><a class="dropdown-item" href="#">18.03.2026-10.05.2026</a></li>
-                  <li><a class="dropdown-item" href="#">10.07.2026-05.09.2026</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">9.06.2026-11.11.2026</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-              <div class="quote-btn">
-                <a href="" class="estimate-btn"> Get Estimate Quote </a>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+  <section class="blog-banner">
+    <div class="blog-banner-image">
+      <img src="./asstest/blog banner.png" alt="Plumbing Team Working" />
+    </div>
+  </section>
 
-    <!-- ===best-section -->
-
-    <section class="best-section">
-      <div class="container">
-        <div class="best-top-section">
-          <h2>Why We Are <span>Best</span></h2>
-          <p>
-            Curabitur vitae nunc sed velit dignissim sodales ut eu. Leo vel orci
-            porta non.
+  <section class="blog-details">
+    <div class="blog-wrapper">
+      <!-- Blog Title -->
+      <div class="row">
+        <div class="col-100">
+          <h1 class="blog-title">
+            Tips To Troubleshooting Common Plumbing </br> Issues
+          </h1>
+          <p class="blog-intro">
+            Plumbing problems can appear at the most inconvenient times. Early
+            warning signs, clogged drains, leaks, and low water pressure are
+            common household plumbing issues. This guide will help you
+            identify problems early, prevent costly repairs, and keep your
+            home running smoothly.
           </p>
         </div>
-        <div class="best-bottom-section">
-          <div class="row">
-            <div class="col-33">
-              <div class="best-card">
-                <div class="best-card-img">
-                  <img src="./asstest/best-img-1.png" alt="best-img-1" />
-                </div>
-                <h6>Licensed Technicians</h6>
-                <p>Mauris augue neque gravida in fermentum et sollicitudin.</p>
-              </div>
-            </div>
-            <div class="col-33">
-              <div class="best-card">
-                <div class="best-card-img">
-                  <img src="./asstest/best-img-2.png" alt="best-img-1" />
-                </div>
-                <h6>Top Rated Service</h6>
-                <p>
-                  Scelerisque felis imperdiet proin fermentum vel orci aliquam.
-                </p>
-              </div>
-            </div>
-            <div class="col-33">
-              <div class="best-card">
-                <div class="best-card-img">
-                  <img src="./asstest/best-img-3.png" alt="best-img-1" />
-                </div>
-                <h6>Timely Services</h6>
-                <p>
-                  Erat nam at lectus urna duis convallis convallis tellus id
-                  aliquet..
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <section>
-      <div class="container">
-      </div>
-    </section>
-    <section class="slider-sec">
-      <div class="container">
-        <div class="slider-header">
-          <h2 class="title2">Read Our Latest <span>Blogs</span></h2>
-          <h4 class="title4">
-            Helpful tips and expert advice to keep your home and workplace
-            running smoothly.
-          </h4>
-        </div>
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="card-img">
-                  <img src="./asstest/Rectangle 22.png" alt="card-img-1" />
-                  <div class="card-arrow">
-                    <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                  </div>
-                </div>
-                <h6>Tips To Troubleshooting Common Plumbing Issues</h6>
-                <p>
-                  Helpful tips to spot and fix common plumbing problems like
-                  leaks and clogs, prevent costly damage, and understand when to
-                  call a professional plumbe
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="card-img">
-                  <img src="./asstest/Rectangle 23.png" alt="card-img-1" />
-                  <div class="card-arrow">
-                    <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                  </div>
-                </div>
-                <h6>Knowing When to DIY and When to Call a Pro</h6>
-                <p>
-                  Learn how to decide between DIY repairs and professional help.
-                  Knowing when to DIY and when to call a pro can save time,
-                  money, and stress.
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="card-img">
-                  <img src="./asstest/Rectangle 22.png" alt="card-img-1" />
-                  <div class="card-arrow">
-                    <img src="./asstest/card-arrow.png" alt="card card-arrow" />
-                  </div>
-                </div>
-                <h6>Tips To Troubleshooting Common Plumbing Issues</h6>
-                <p>
-                  Phasellus faucibus scelerisque eleifend donec pretium
-                  vulputate. Ac orci...
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+      <!-- Blog Content -->
+      <div class="row blog-row">
+        <div class="col-65 blog-content">
+          <h2>Understanding Common </br>Plumbing Problems</h2>
+          <p>
+            Before applying tips for troubleshooting common plumbing issues,
+            it’s important to understand what usually goes wrong in </br> household
+            plumbing systems.
+          </p>
+          <!-- SECTION 1 -->
+          <h3>1. Leaky Faucets</h3>
+          <p>
+            A dripping faucet may seem harmless, but it can waste hundreds of
+            liters of water every month.
+          </p>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <h4>Causes:</h4>
+          <ul>
+            <li>Worn-out washers</li>
+            <li>Corroded valve seats</li>
+            <li>Loose parts</li>
+          </ul>
+
+          <h4>Solution:</h4>
+          <p>
+            Turn off the water supply, replace damaged washers, and tighten
+            all components.
+          </p>
+          <div class="col-35 blog-images">
+            <img src="./asstest/plumber-1.png" alt="Fixing Toilet Plumbing" />
+
+          </div>
+          <!-- SECTION 2 -->
+          <h3>2. Blocked Sink or Bathroom Drains</h3>
+          <p>
+            Clogged drains are one of the most common plumbing complaints.
+          </p>
+
+          <h4>Common Reasons:</h4>
+          <ul>
+            <li>Hair buildup</li>
+            <li>Soap residue</li>
+            <li>Food waste and grease</li>
+          </ul>
+
+          <h4>DIY Fix:</h4>
+          <ul>
+            <li>Use a plunger</li>
+            <li>Pour hot water mixed with baking soda and vinegar</li>
+            <li>Clean the drain trap</li>
+          </ul>
+          <div class="col-35 blog-images">
+            <img src="./asstest/plumber-2.png" alt="Fixing Toilet Plumbing" />
+          </div>
+          <!-- SECTION 3 -->
+          <h3>3. Weak Water Flow from Taps</h3>
+          <p>Low water pressure can make daily tasks frustrating.</p>
+
+          <h4>Possible Causes:</h4>
+          <ul>
+            <li>Mineral buildup</li>
+            <li>Pipe leaks</li>
+            <li>Faulty pressure regulator</li>
+          </ul>
+          <div class="col-35 blog-images image-left">
+            <img src="./asstest/cleaner-2.png" alt="Fixing Toilet Plumbing" />
+          </div>
+          <!-- SECTION 4 -->
+          <h3>4. Toilet Keeps Running</h3>
+          <p>
+            A constantly running toilet can waste a significant amount of water if
+            not fixed promptly.
+          </p>
+
+          <h4>Common Issues:</h4>
+          <ul>
+            <li>Faulty flapper</li>
+            <li>Improper float level</li>
+            <li>Worn-out fill valve</li>
+          </ul>
+
+          <h4>Solution:</h4>
+          <p>
+            Open the tank lid and inspect internal components. Replacing worn parts
+            usually solves the issue quickly.
+          </p>
+
+          <!-- SECTION IMAGE -->
+          <div class="col-35 blog-images image-left">
+            <img src="./asstest/image-4.png" alt="Fixing Toilet Plumbing" />
+          </div>
+
+          <!-- SECTION 5 -->
+          <h3>5. Leaking Pipes</h3>
+          <p>
+            Leaks under sinks or behind walls can cause serious damage if ignored.
+          </p>
+
+          <h4>Warning Signs:</h4>
+          <ul>
+            <li>Damp walls or floors</li>
+            <li>Musty smell</li>
+            <li>Unexpected water bills</li>
+          </ul>
+
+          <h4>Temporary Fix:</h4>
+          <p>Use plumber’s tape or epoxy putty until a permanent repair is made.</p>
+
+          <!-- SECTION IMAGE -->
+          <div class="col-35 blog-images">
+            <img src="./asstest/image-5.png" alt="Leaking Pipe Repair" />
+          </div>
+
+          <!-- SECTION 6 -->
+          <h3>6. No Hot Water or Inconsistent Temperature</h3>
+          <p>Water heater problems are uncomfortable and disruptive.</p>
+
+          <h4>Common Causes:</h4>
+          <ul>
+            <li>Sediment buildup</li>
+            <li>Faulty thermostat</li>
+            <li>Heating element failure</li>
+          </ul>
+
+          <h4>Maintenance Tip:</h4>
+          <p>
+            Flush your water heater annually and check the thermostat settings
+            regularly.
+          </p>
+
+          <!-- SECTION IMAGE -->
+          <div class="col-35 blog-images">
+            <img src="./asstest/image-6.png" alt="Water Heater Issue" />
+          </div>
+
+          <!-- SECTION 7 -->
+          <h3>7. How To Avoid Future Plumbing Issues</h3>
+          <p>Prevention is always better than repair.</p>
+
+          <h4>Best Practices:</h4>
+          <ul>
+            <li>Avoid pouring grease into drains</li>
+            <li>Use drain strainers</li>
+            <li>Inspect pipes regularly</li>
+            <li>Schedule annual plumbing checks</li>
+          </ul>
+
+          <!-- SECTION IMAGE -->
+          <div class="col-35 blog-images image-left">
+            <img src="./asstest/image-7.png" alt="Plumbing Maintenance" />
+          </div>
+
+          <!-- SECTION 8 -->
+          <h3>8. Know Your Limits</h3>
+          <p>
+            While DIY solutions help, some problems require professional expertise.
+          </p>
+
+          <h4>Call a Professional When:</h4>
+          <ul>
+            <li>Burst pipes occur</li>
+            <li>Sewer line issues arise</li>
+            <li>Major water heater failures happen</li>
+          </ul>
+
+          <p>
+            Recognizing when home fixes won’t work is essential to prevent costly
+            damage.
+          </p>
         </div>
+
+        <!-- CONCLUSION -->
+        <h3 class="blog-conclusion-title">Conclusion</h3>
+        <p class="blog-conclusion">
+          Plumbing problems don’t have to be overwhelming. With the right
+          knowledge, tools, and awareness, many common issues can be resolved
+          quickly and safely. When problems exceed your control, hiring a
+          professional ensures long-term reliability and peace of mind.
+        </p>
       </div>
-    </section>
-   </main>
-       <!-- footer-sec -->
-    <footer
-      class="luxy-el footer-sec"
-      data-speed="0.06"
-      data-speed="0.06"
-      data-aos="fade-up"
-    >
+    </div>
+  </section>
+   <!-- footer-sec -->
+    <footer class="luxy-el footer-sec" data-speed="0.06">
       <div class="container">
         <div class="luxy-el footer-header" data-speed="-0.1">
           Subscribe Our Newsletter
@@ -819,7 +726,7 @@
           </div>
         </form>
         <div class="row align-items-center">
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-main-cont">
               <div class="footer-logo">
                 <a href=""
@@ -869,7 +776,7 @@
               </div>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Site Links</div>
               <ul>
@@ -882,7 +789,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Popular Cities</div>
               <ul>
@@ -890,23 +797,14 @@
                   <a
                     data-fancybox
                     data-type="iframe"
-                    data-src="https://www.google.com/maps?q=Delhi&output=embed"
+                    data-src="https://www.google.com/maps?q=Howrah+West+Bengal&output=embed"
                     href="javascript:;"
                     class="footer-link"
-                    >Dehli</a
                   >
+                    Howrah
+                  </a>
                 </li>
 
-                <li>
-                  <a
-                    data-fancybox
-                    data-type="iframe"
-                    data-src="https://www.google.com/maps?q=Mumbai&output=embed"
-                    href="javascript:;"
-                    class="footer-link"
-                    >Mumbai</a
-                  >
-                </li>
                 <li>
                   <a
                     data-fancybox
@@ -915,23 +813,37 @@
                     href="javascript:;"
                     class="footer-link"
                   >
-                    Kolkata
+                    Salt Lake
                   </a>
                 </li>
+
                 <li>
                   <a
                     data-fancybox
                     data-type="iframe"
-                    data-src="https://www.google.com/maps?q=Bengaluru&output=embed"
+                    data-src="https://www.google.com/maps?q=Newtown+Kolkata&output=embed"
                     href="javascript:;"
                     class="footer-link"
-                    >Bengaluru</a
                   >
+                    Newtown
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Alipore+Kolkata&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Alipore
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Categories</div>
               <ul>
@@ -942,7 +854,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Contact Info</div>
               <ul>
@@ -976,7 +888,7 @@
                     class="footer-link"
                   >
                     <span><i class="fa-regular fa-envelope"></i></span>
-                    hellofixcart@gmail.com
+                    localpro.services.kolkata@gmail.com
                   </a>
                 </li>
               </ul>
@@ -988,9 +900,9 @@
                 class="footer-col col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12"
               >
                 <div class="side-box">
-                  <div class="left-side"><a href="">Copyright 2025</a></div>
+                  <div class="left-side"><a href="privacy.html">Copyright 2025</a></div>
                   <div class="right-side">
-                    <a href="">Aone Theme. All Right Reserved</a>
+                    <a href="term.html">Aone Theme. All Right Reserved</a>
                   </div>
                 </div>
               </div>
@@ -1028,17 +940,16 @@
         </ul>
       </div>
     </div>
-    <!-- fancy-box-js -->
+     <!-- fancy-box-js -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <!-- swiper-js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- bootsrap-js -->
+    <!-- bootstrap-js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
     <!-- custom-js -->
-    <script src="./js/app.js"></script>
-  </body>
+     <script src="./js/services-details.js"></script>
+</body>
+
 </html>

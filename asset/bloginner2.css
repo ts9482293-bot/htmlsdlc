@@ -1,0 +1,258 @@
+/* =========================
+   RESET
+========================= */
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-poppins: Poppins-Light, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-poppins);
+  background: #f6f2ef;
+  color: #424242;
+  line-height: 1.75;
+}
+
+/* =========================
+   BANNER
+========================= */
+.blog-banner {
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 200px;
+}
+
+.blog-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   CARD OVER BANNER (KEY FIX)
+========================= */
+.blog-details {
+  position: relative;
+  margin-top: -140px;
+  z-index: 1;
+}
+
+.blog-wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 80px 64px;
+  border-radius: 6px;
+}
+
+/* =========================
+   TITLE SECTION
+========================= */
+.blog-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blog-intro {
+  max-width: 960px;
+  margin: 0 auto 88px;
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* =========================
+   ROW LAYOUT
+========================= */
+.blog-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 104px;
+}
+
+.blog-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================
+   TEXT
+========================= */
+.title {
+  text-align: center;
+}
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.text p {
+  width: 719px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.text ul {
+  padding-left: 18px;
+}
+
+.text li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   IMAGES (FIGMA SIZE)
+========================= */
+.image {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.image img {
+  width: 95%;
+  height: 322px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* =========================
+   CONCLUSION
+========================= */
+.conclusion {
+  position: relative;
+  margin-top: 88px;
+  max-width: 760px;
+}
+
+.conclusion-text h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.conclusion-text p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.85;
+}
+
+.conclusion-image {
+  position: absolute;
+  left: 130%;
+  top: -185%;
+  height: 438px;
+  width: 322px;
+}
+.conclusion-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 11px;
+}
+
+/* =========================
+   RESPONSIVE (FIGMA SAFE)
+========================= */
+@media (max-width: 1200px) {
+  .blog-wrapper {
+    padding: 64px 40px;
+  }
+
+  .blog-banner {
+    height: 520px;
+  }
+
+  .blog-details {
+    margin-top: -120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .blog-banner {
+    height: 460px;
+  }
+
+  .blog-details {
+    margin-top: -100px;
+  }
+
+  .blog-row,
+  .blog-row.reverse {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    height: auto;
+  }
+
+  .conclusion-image {
+    position: static;
+    margin-top: 32px;
+    width: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-banner {
+    height: 320px;
+  }
+
+  .blog-wrapper {
+    padding: 48px 20px;
+  }
+
+  .blog-title {
+    font-size: 24px;
+  }
+
+  .blog-intro {
+    font-size: 15px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+  }
+
+  .text h3 {
+    font-size: 18px;
+  }
+
+  .text p,
+  .text li {
+    font-size: 15px;
+  }
+}
