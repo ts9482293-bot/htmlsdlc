@@ -1,54 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SDLC</title>
-    <!-- Title -->
-<title>About Local Pro | Trusted Home Service Professionals Across India</title>
-<!-- Meta description -->
-<meta name="description" content="Learn about Local Pro — a trusted platform connecting customers with verified professionals for plumbing, electrical, cleaning, painting, and home services across India. Our mission is quality, safety, and reliability." />
-<!-- Canonical -->
-<link rel="canonical" href="https://www.localpro.com/about-us" />
-<!-- Robots -->
-<meta name="robots" content="index, follow" />
-<!-- Open Graph / Facebook -->
-<meta property="og:locale" content="en_IN" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="About Local Pro | Trusted Home Service Professionals Across India" />
-<meta property="og:description" content="Discover how Local Pro connects customers with verified professionals for plumbing, electrical, cleaning, painting, and home services across India. Built on trust, quality, and convenience." />
-<meta property="og:url" content="https://www.localpro.com/about-us" />
-<meta property="og:site_name" content="Local Pro" />
-<meta property="og:image" content="https://www.localpro.com/assets/og/about-og.jpg" />
-<meta property="og:image:alt" content="Local Pro team providing reliable home services across India" />
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@LocalProIndia" />
-<meta name="twitter:creator" content="@LocalProIndia" />
-<meta name="twitter:title" content="About Local Pro | Trusted Home Service Professionals Across India" />
-<meta name="twitter:description" content="Meet the team behind Local Pro and learn how we deliver trusted plumbing, electrical, cleaning, painting, and home services across India." />
-<meta name="twitter:image" content="https://www.localpro.com/assets/og/about-og.jpg" />
-
-    <!-- fontaswome-cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- bootsrap-icon-cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <!-- fancy-box-css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+    <title>Bootstrap demo</title>
     <!-- bootstrap-css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -56,12 +11,28 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+     <!-- bootstrap-link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+   <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <!-- custom-css -->
-    <link rel="stylesheet" href="./asset/style2.css" />
+     <link rel="stylesheet" href="./asset/term.css">
+     <!-- navbar-css -->
+  <link rel="stylesheet" href="./asset/navbar.css" />
+  <!-- footer-css -->
+  <link rel="stylesheet" href="./asset/footer.css" />
   </head>
   <body>
-    <!-- nav-sec -->
-   <header class="header-sec">
+     <!-- nav-sec -->
+    <header class="header-sec" class="luxy-el" data-speed="0.08">
       <div class="container">
         <nav class="nav-top">
           <ul class="nav-top-list">
@@ -184,17 +155,25 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="index3.html">Services</a>
+                    <a class="dropdown-item" href="index3.html"
+                      >Services Provider</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="plumber.html">Plumber</a></li>
-                  <li><a class="dropdown-item" href="electrician.html">Electrician</a></li>
+                  <li>
+                    <a class="dropdown-item" href="plumber.html">Plumber</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="electrician.html"
+                      >Electrician</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="cleaner.html">Cleaner</a>
                   </li>
                 </ul>
               </li>
-                  <li class="nav-item active">
+              <li class="nav-item active">
                 <a class="nav-link" href="index2.html">About Us</a>
               </li>
               <li class="nav-item">
@@ -213,12 +192,8 @@
 
               <!-- dropdown -->
               <select class="location-select" id="locationSelect">
-                 <option class="none" value="Salt Lake, Kolkata" >
-                 
-                </option>
-                <option value="Salt Lake, Kolkata" >
-                  Salt Lake, Kolkata
-                </option>
+                <option class="none" value="Salt Lake, Kolkata"></option>
+                <option value="Salt Lake, Kolkata">Salt Lake, Kolkata</option>
                 <option>Delhi</option>
                 <option>Mumbai</option>
                 <option>Bengaluru</option>
@@ -319,26 +294,27 @@
                 <div class="col-12 modal-col">
                   <div class="input-cont">
                     <p id="addressError" class="error"></p>
-                    <label class="modal-lable" for="address">Address</label
+                    <label class="modal-lable" for="address">Add Role</label
                     ><br />
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      placeholder="Enter your address"
-                    />
+                    <select class="form-drop" id="">
+                      <option value="Salt Lake, Kolkata">
+                        Choose Your Role
+                      </option>
+                      <option>User</option>
+                      <option>Provider</option>
+                    </select>
                   </div>
                 </div>
 
-                <div class="col-6">
+                <!-- <div class="col-6">
                   <a href="" class="apple-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Vector (3).png" alt="" />
                     </figure>
                     Apple
                   </a>
-                </div>
-                <div class="col-6">
+                </div> -->
+                <div class="col-12">
                   <a href="" class="google-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Google - Original.png" alt="" />
@@ -474,15 +450,15 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <!-- <div class="col-6">
                   <a href="" class="apple-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Vector (3).png" alt="" />
                     </figure>
                     Apple
                   </a>
-                </div>
-                <div class="col-6">
+                </div> -->
+                <div class="col-12">
                   <a href="" class="google-btn">
                     <figure class="apple-img">
                       <img src="./imges2/Google - Original.png" alt="" />
@@ -506,344 +482,248 @@
       </div>
     </div>
     <main>
-      <!-- banner-sec -->
-      <section class="banner-sec">
-        <div class="container banner-container">
-          <div class="banner-cont" data-aos="fade-up">
-            <div class="title3">About Us</div>
-            <div class="title1">
-              Easy way to find a perfect Service with Local<span>pro</span>
-            </div>
-          </div>
+      <!-- term-sec -->
+    <section class="term-sec">
+        <div class="container term-container">
+        <div class="term-header">
+          <h1 class="title1">Terms & Conditions</h1>
+          <h5 class="title5">Last Update :- January, 1 2026</h5>
         </div>
-      </section>
-      <!-- approach-sec -->
-      <section class="approach-sec">
-        <div class="container">
-          <!-- <div class="approach-cont">
-                <h4 class="title4">our approach</h4>
-                <h2 class="title2">
-                  Complete electrical services <span> for everyday</span>
-                </h2>
-                <p>
-                  From small repairs to large-scale installations our
-                  experienced electricians provide tailored solutions to power
-                  your home.
-                </p>
-              </div> -->
-          <div class="row approach-row align-items-center">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="row">
-                <div
-                  class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"
-                >
-                  <div
-                    class="approch-card-wraper"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <div class="card approach-card">
-                      <div class="card-img">
-                        <img src="./imges2/image 73.png" alt="" />
-                      </div>
-                      <div class="card-main-body">
-                        <div class="card-main-title">
-                          25+ Years Of Experience
-                        </div>
-                        <p class="card-text">
-                          Trusted electrical experts with 25+ years of
-                          experience.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"
-                >
-                  <div class="approach-sub-img" data-aos="fade-left">
-                    <img src="./imges2/Rectangle 9.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="approach-img">
-                <img src="./imges2/Rectangle 10.png" alt="" />
-              </div> -->
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="approach-cont" data-aos="fade-right">
-                <h2 class="title2">
-                  Complete electrical services <span> for everyday</span>
-                </h2>
-                <h4 class="title4">our approach</h4>
-                <p>
-                  At Local Pro, we simplify everyday services by connecting you
-                  with trusted local professionals. With easy booking, verified
-                  experts, and reliable support, we ensure quick, safe, and
-                  hassle-free service every time.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="approach-img">
-                <img src="./imges2/Rectangle 10.png" alt="" />
-              </div>
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="row">
-                <div
-                  class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 approach-col"
-                >
-                  <div class="card approach-sub-card">
-                    <div class="card-sub-body">
-                      <div class="card-cont-img">
-                        <img src="./imges2/Frame 1261155692.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-title">Providing Awesome Service</div>
-                      <p class="card-sub-text">
-                        Verified local experts delivering reliable service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 approach-col"
-                >
-                  <div class="card approach-sub-card">
-                    <div class="card-sub-body">
-                      <div class="card-cont-img">
-                        <img src="./imges2/Frame 1261155692.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-title">Providing Awesome Service</div>
-                      <p class="card-sub-text">
-                        24/7 Our Support- Quick help and booking assistance
-                        anytime.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- electric-sec -->
-      <section class="electric-sec">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="electric-header" data-aos="fade-up">
-                <!-- <h4 class="title4">our approach</h4> -->
-                <h2 class="title2">
-                  Complete electrical services <span>for everyday</span>
-                </h2>
-              </div>
-              <div class="row align-items-center">
-                <div class="col-12">
-                  <div class="card electric-card" data-aos="zoom-in">
-                    <div class="card-box">
-                      <div class="electric-card-img">
-                        <img
-                          src="./imges2/Frame 93.png"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="electric-card-title">Our Mission</div>
-                      <p class="card-para">
-                        Our mission is to deliver, reliable and high-quality
-                        ensuring efficiency and excellence in every project we
-                        undertake.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="card electric-card" data-aos="zoom-in">
-                    <div class="card-box">
-                      <div class="electric-card-img">
-                        <img
-                          src="./imges2/Frame (1).png"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="electric-card-title">Our Vission</div>
-                      <p class="card-para">
-                        Our vision is to deliver, reliable and high-quality
-                        ensuring efficiency and excellence in every project we
-                        undertake.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 electric-col">
-              <div class="electic-img-wraper">
-                <div class="electric-img" data-aos="zoom-in">
-                  <img src="./imges2/Subtract.png" alt="" />
-                  <!-- <div class="top-corner"></div>
-                <div class="bottom-corner"></div> -->
-                  <figure class="electric-sub-img">
-                    <img src="./imges2/Rectangle 13.png" alt="" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- estimate-sec -->
-      <section class="estimate-sec">
-        <div class="container estimate-conatiner">
-          <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="estimate-cont" data-aos="fade-right">
-                <h2 class="title2">
-                  Hassle free estimate just a <span>click away</span>.
-                </h2>
-                <h4 class="title4">get a estimate</h4>
-                <ul class="estimate-list">
+        <div class="row ">
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-12">
+            <div class="term-cont-left">
+              <h4 class="title4">
+                By accessing or using our home service platform, you agree to
+                comply with and be bound by the following terms. Please read
+                them carefully.
+              </h4>
+              <ul class="term-left-list">
                 <li>
-                  We connect you with trusted local professionals for all your
-                  daily needs.
+                  Scope of Services
+                  <p>
+                    Our platform connects customers with independent service
+                    professionals such as plumbers, electricians, cleaners,
+                    carpenters, technicians, and other home service providers.
+                    We act only as a facilitator and do not directly provide the
+                    services.
+                  </p>
                 </li>
                 <li>
-                  From small repairs to complete installations, Local Pro helps
-                  you book
+                  User Registration & Eligibility
+                  <p>
+                    To use certain features, you must create an account. You
+                    agree to provide accurate, complete, and up-to-date
+                    information and to keep your login credentials secure. You
+                    must be at least 18 years old to use our services.
+                  </p>
                 </li>
                 <li>
-                  skilled professionals nearby with transparent pricing and
-                  quick service.
+                  Platform Usage Guidelines
+                  <p>
+                    You agree to use the platform responsibly and lawfully. Any
+                    misuse, fraudulent activity, or attempt to disrupt the
+                    platform may result in suspension or termination of your
+                    account.
+                  </p>
                 </li>
-                </ul>
-                <ul>
-                  <li>Seasonal & Locally Sourced Ingredients</li>
-                  <li>Vegetarian & Dietary-Friendly Options</li>
-                  <li>Exquisite Pairings & Unique Flavors</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="estimate-img" data-aos="fade-left">
-                <img
-                  src="./imges2/isolated-studio-shot-cheerful-emotional-young-repairman-wearing-protective-goggles 1.png"
-                  alt=""
-                />
-              </div>
+                <li>
+                  Data Usage & Privacy Consent
+                  <p>
+                    By using our platform, you consent to the collection,
+                    storage, and use of your personal data in accordance with
+                    our Privacy Policy. We take reasonable measures to protect
+                    your information.
+                  </p>
+                </li>
+                <li>
+                  Service Requests & Scheduling
+                  <p>
+                    Service bookings are subject to availability. We do not
+                    guarantee that a service professional will accept every
+                    request. Appointment times may change due to unforeseen
+                    circumstances.
+                  </p>
+                </li>
+                <li>
+                  Charges, Payments & Invoicing
+                  <p>
+                    Prices may vary depending on service type, location, and
+                    scope of work. Payments must be made through approved
+                    payment methods. We are not responsible for additional
+                    charges agreed upon directly between the user and the
+                    service provider.
+                  </p>
+                </li>
+                <li>
+                  User Behavior & Conduct
+                  <p>
+                    Users must treat service providers with respect. Harassment,
+                    abuse, or inappropriate behavior may lead to immediate
+                    account suspension without notice.
+                  </p>
+                </li>
+                <li>
+                  External Providers & Third-Party Tools
+                  <p>
+                    The platform may include links or integrations with
+                    third-party services. We are not responsible for their
+                    content, policies, or actions.
+                  </p>
+                </li>
+                <li>
+                  User Obligations
+                  <p>
+                    You are responsible for providing accurate service details,
+                    safe working conditions, and timely access to your premises.
+                    Any losses due to incorrect information provided by you are
+                    your responsibility.
+                  </p>
+                </li>
+                <li>
+                  Ownership & Platform Rights
+                  <p>
+                    All content, branding, design, logos, and software related
+                    to the platform are owned by us and protected under
+                    applicable intellectual property laws. Unauthorized use is
+                    strictly prohibited.
+                  </p>
+                </li>
+                <li>
+                  Account Suspension & Termination
+                  <p>
+                    We reserve the right to suspend or terminate accounts that
+                    violate these terms, applicable laws, or platform policies,
+                    with or without prior notice.
+                  </p>
+                </li>
+                <li>
+                  Service Limitations & No Guarantees
+                  <p>
+                    We do not guarantee service quality, outcomes, or timelines.
+                    All services are provided “as is” without warranties of any
+                    kind, express or implied.
+                  </p>
+                </li>
+                <li>
+                  Liability & Compensation
+                  <p>
+                    We are not liable for indirect, incidental, or consequential
+                    damages. Users agree to indemnify and hold us harmless from
+                    claims arising out of misuse of the platform or violation of
+                    these terms.
+                  </p>
+                </li>
+                <li>
+                  Legal Framework & Dispute Handling
+                  <p>
+                    These terms are governed by the laws of [Your
+                    Country/State]. Any disputes shall be resolved through
+                    arbitration or courts located in the applicable
+                    jurisdiction.
+                  </p>
+                </li>
+                <li>
+                  Changes to Terms
+                  <p>
+                    We may update these terms at any time. Continued use of the
+                    platform after changes implies acceptance of the updated
+                    terms.
+                  </p>
+                </li>
+                <li>
+                  Contact Information
+                  <p>
+                    For questions or concerns regarding these Terms &
+                    Conditions, please contact us at:
+                  </p>
+                  <div class="list-email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="">
+                    localpro.services.kolkata@gmail.com
+                  </a></div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="row align-items-center">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
-              <div
-                class="estimate-sub-cont"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div class="estimate-sub-img">
-                  <img src="./imges2/image 78.png" alt="" />
-                </div>
-                <div class="counter title2" data-target="5000">0</div>
-                <p>Projects Completed</p>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
-              <div
-                class="estimate-sub-cont"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div class="estimate-sub-img">
-                  <img src="./imges2/image 79.png" alt="" />
-                </div>
-                <div class="counter title2" data-target="700">0</div>
-                <p>Emergency Repairs</p>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
-              <div
-                class="estimate-sub-cont"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div class="estimate-sub-img">
-                  <img src="./imges2/image 80.png" alt="" />
-                </div>
-                <div class="counter title2" data-target="4500">0</div>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
-              <div
-                class="estimate-sub-cont"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div class="estimate-sub-img">
-                  <img src="./imges2/image 81.png" alt="" />
-                </div>
-                <div class="counter title2" data-target="150">0</div>
-                <p>Skilled Professionals</p>
-              </div>
+          <div class="col-xxl-5 col-xl-5 col-lg-5 col-12">
+            <div class="term-right-cont">
+              <h4 class="title4">
+                TERMS AND CONDITIONS
+              </h4>
+               <ul class="term-right-list">
+                <li>
+                  Scope of Services
+                 
+                </li>
+                <li>
+                  User Registration & Eligibility
+              
+                </li>
+                <li>
+                  Platform Usage Guidelines
+                
+                </li>
+                <li>
+                  Data Usage & Privacy Consent
+                 
+                </li>
+                <li>
+                  Service Requests & Scheduling
+                
+                </li>
+                <li>
+                  Charges, Payments & Invoicing
+                
+                </li>
+                <li>
+                  User Behavior & Conduct
+                
+                </li>
+                <li>
+                  External Providers & Third-Party Tools
+                  
+                </li>
+                <li>
+                  User Obligations
+               
+                </li>
+                <li>
+                  Ownership & Platform Rights
+                 
+                </li>
+                <li>
+                  Account Suspension & Termination
+                 
+                </li>
+                <li>
+                  Service Limitations & No Guarantees
+                 
+                </li>
+                <li>
+                  Liability & Compensation
+                 
+                </li>
+                <li>
+                  Legal Framework & Dispute Handling
+                  
+                </li>
+                <li>
+                  Changes to Terms
+                
+                </li>
+                <li>
+                  Contact Information
+                 
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <!-- choose-sec -->
-      <section class="choose-sec">
-        <div class="container">
-          <div class="row choose-row align-items-center">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="choose-img" data-aos="fade-right">
-                <img src="./imges2/Rectangle 15.png" alt="" />
-              </div>
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-              <div class="choose-cont" data-aos="fade-left">
-                <h4 class="title4">why choose us</h4>
-                <h2 class="title2">
-                  powering progress through <span>excellence</span>
-                </h2>
-                <h4 class="title4">
-                  Over the years, we've accomplished remarkable milestones in
-                  the electrical services industry. From completing complex
-                  projects to earning
-                </h4>
-                <ul>
-                  <li>
-                    Committed to delivering safe and efficient electrical
-                    solutions.
-                  </li>
-                  <li>
-                    Backed by years of expertise and professional excellence.
-                  </li>
-                </ul>
-                <div class="choose-btn">
-                  <a href="index4.html" class="view-btn">
-                    View Our Milestones <i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
     </main>
     <!-- footer-sec -->
-    <footer
-      class="luxy-el footer-sec"
-      data-speed="0.06"
-      data-speed="0.06"
-      data-aos="fade-up"
-    >
+    <footer class="luxy-el footer-sec" data-speed="0.06">
       <div class="container">
         <div class="luxy-el footer-header" data-speed="-0.1">
           Subscribe Our Newsletter
@@ -863,7 +743,7 @@
           </div>
         </form>
         <div class="row align-items-center">
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-main-cont">
               <div class="footer-logo">
                 <a href=""
@@ -913,7 +793,7 @@
               </div>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Site Links</div>
               <ul>
@@ -926,7 +806,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Popular Cities</div>
               <ul>
@@ -934,23 +814,14 @@
                   <a
                     data-fancybox
                     data-type="iframe"
-                    data-src="https://www.google.com/maps?q=Delhi&output=embed"
+                    data-src="https://www.google.com/maps?q=Howrah+West+Bengal&output=embed"
                     href="javascript:;"
                     class="footer-link"
-                    >Dehli</a
                   >
+                    Howrah
+                  </a>
                 </li>
 
-                <li>
-                  <a
-                    data-fancybox
-                    data-type="iframe"
-                    data-src="https://www.google.com/maps?q=Mumbai&output=embed"
-                    href="javascript:;"
-                    class="footer-link"
-                    >Mumbai</a
-                  >
-                </li>
                 <li>
                   <a
                     data-fancybox
@@ -959,23 +830,37 @@
                     href="javascript:;"
                     class="footer-link"
                   >
-                    Kolkata
+                    Salt Lake
                   </a>
                 </li>
+
                 <li>
                   <a
                     data-fancybox
                     data-type="iframe"
-                    data-src="https://www.google.com/maps?q=Bengaluru&output=embed"
+                    data-src="https://www.google.com/maps?q=Newtown+Kolkata&output=embed"
                     href="javascript:;"
                     class="footer-link"
-                    >Bengaluru</a
                   >
+                    Newtown
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="https://www.google.com/maps?q=Alipore+Kolkata&output=embed"
+                    href="javascript:;"
+                    class="footer-link"
+                  >
+                    Alipore
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Categories</div>
               <ul>
@@ -986,7 +871,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-20">
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-12">
             <div class="footer-cont">
               <div class="footer-cont-header">Contact Info</div>
               <ul>
@@ -1020,7 +905,7 @@
                     class="footer-link"
                   >
                     <span><i class="fa-regular fa-envelope"></i></span>
-                    hellofixcart@gmail.com
+                    localpro.services.kolkata@gmail.com
                   </a>
                 </li>
               </ul>
@@ -1072,17 +957,13 @@
         </ul>
       </div>
     </div>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <!-- fancy-box-js -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <!-- bootstrap-js -->
+    <!-- bootsrap-js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
     <!-- custom-js -->
-    <script src="./js/script2.js"></script>
+     <script src="./js/services-details.js"></script>
   </body>
 </html>

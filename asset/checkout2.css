@@ -515,11 +515,41 @@ ul {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-proceed::after,
+.btn-proceed::before{
+    content: '';
+    height: 100%;
+    width: 51%;
+    background: white;
+    position: absolute;
+    top: 0;
+    transition: 0.4s all ease;
+    z-index: -1;
+}
+.btn-proceed::after{
+    right: -51%;
+}
+.btn-proceed::before{
+    left: -51%;
+}
+.btn-proceed:hover::after{
+    right: 0;
+}
+.btn-proceed:hover::before{
+    left: 0;
 }
 
 .btn-proceed:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(65, 105, 255, 0.4);
+    color: #85ACF5;
 }
 
 /* Newsletter Section */

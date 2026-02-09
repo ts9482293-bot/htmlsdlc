@@ -574,6 +574,16 @@ border-bottom-right-radius: 20px;
   margin: 0 auto;
   /* display: flex; */
 }
+.form-drop{
+      width: 556px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin: 0 auto 24px;
+    background: var(--email-background-color);
+}
 .modal-title {
   /* margin: 0 0 0 auto; */
   text-align: center;
@@ -746,6 +756,7 @@ border-bottom-right-radius: 20px;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin: 0 auto;
 }
 .google-btn::after,
 .google-btn::before {
@@ -1128,6 +1139,9 @@ border-bottom-right-radius: 20px;
   background: var(--offcanvsbckground-color);
   padding: 100px 0 0;
 }
+.services-cont>.title2{
+  max-width: 1045px;
+}
 .services-card {
   max-width: 312px;
   height: 406px;
@@ -1314,6 +1328,9 @@ border-bottom-right-radius: 20px;
   height: 100%;
   object-fit: contain;
   transition: transform 0.7s ease;
+}
+.home-cont>.title2{
+  max-width: 708px;
 }
 .home-cont > .title3 {
   margin: 13px 0 24px;
@@ -2556,6 +2573,9 @@ border-bottom-right-radius: 20px;
     max-width: 406px;
     margin: 0 auto;
    }
+   .form-drop{
+    width: 406px;
+   }
    .btn-cont{
     margin-top: 32px;
    }
@@ -2733,6 +2753,9 @@ border-bottom-right-radius: 20px;
   .banner-img {
     max-width: 100%;
     height: auto;
+  }
+  .home-cont>.title2{
+    margin: 0 auto;
   }
   .background-circle {
     left: 27%;
@@ -3360,6 +3383,9 @@ border-bottom-right-radius: 20px;
   .input-cont {
     max-width: 260px;
   }
+    .form-drop{
+    width: 250px;
+   }
   .input-cont-para > p {
     font-size: 14px;
     margin: 0 auto;
