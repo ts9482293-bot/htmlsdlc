@@ -4,6 +4,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SDLC</title>
+       <!-- schema -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.localpro.com/#organization",
+      "name": "Local Pro",
+      "url": "https://www.localpro.com/",
+      "logo": "https://www.localpro.com/images/logo.png",
+      "description": "Local Pro is a trusted online platform connecting customers across India with verified professionals for plumbing, electrical, home cleaning, painting, AC repair and home maintenance services."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.localpro.com/about-us/#webpage",
+      "url": "https://www.localpro.com/about-us/",
+      "name": "About Us - Local Pro",
+      "isPartOf": {
+        "@id": "https://www.localpro.com/#organization"
+      },
+      "about": {
+        "@id": "https://www.localpro.com/#organization"
+      },
+      "description": "Learn about Local Pro’s mission, values and commitment to delivering reliable home services across India through verified professionals."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.localpro.com/about-us/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.localpro.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://www.localpro.com/about-us/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
     <!-- Title -->
 <title>About Local Pro | Trusted Home Service Professionals Across India</title>
 <!-- Meta description -->
@@ -1053,69 +1101,7 @@
         </ul>
       </div>
     </div>
-    <!-- schema -->
-     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://www.localpro.com/#all-services",
-  "name": "Home Services Marketplace Across India",
-  "serviceType": "On-demand Home Services",
-  "provider": {
-    "@type": "Organization",
-    "@id": "https://www.localpro.com/#organization",
-    "name": "Local Pro",
-    "url": "https://www.localpro.com/"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "India"
-  },
-  "description": "Local Pro connects customers across India with verified professionals for plumbing, electrical repairs, home cleaning, painting, AC repair and complete home maintenance services.",
-  "url": "https://www.localpro.com/",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Local Pro Home Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Plumbing Services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Electrical Services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Home Cleaning Services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Painting Services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "AC Repair & Maintenance"
-        }
-      }
-    ]
-  }
-}
-</script>
+ 
  
 
     <!-- AOS JS -->
