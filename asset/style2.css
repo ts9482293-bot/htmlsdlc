@@ -206,7 +206,7 @@ html {
   height: 67px;
   border-radius: 100px; */
   /* background: var(--card-background-color); */
-  margin: 0 auto 0 58px;
+  margin: 0 auto 0 24px;
   display: flex;
   align-items: center;
 }
@@ -306,7 +306,7 @@ nav,
 }
 .nav-form{
   position: relative;
-  margin: 0 69px 0 0;
+  margin: 0 24px 0 0;
 }
 #search{
   max-width: 208.97px;

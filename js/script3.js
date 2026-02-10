@@ -150,51 +150,6 @@ const form = document.getElementById("modalform");
     });
   });
 
-  const locationBox = document.querySelector(".nav-location");
-const locationSelect = document.getElementById("locationSelect");
-const locationText = document.querySelector(".location-text");
-
-const mapUrls = {
-  "Salt Lake, Kolkata":
-    "https://www.google.com/maps?q=Salt+Lake+Kolkata&output=embed",
-  "Delhi":
-    "https://www.google.com/maps?q=Delhi&output=embed",
-  "Mumbai":
-    "https://www.google.com/maps?q=Mumbai&output=embed",
-  "Bengaluru":
-    "https://www.google.com/maps?q=Bengaluru&output=embed",
-};
-
-// ✅ click ONLY on box (not select)
-locationBox.addEventListener("click", (e) => {
-  if (e.target === locationSelect) return; // stop dropdown click
-  openMap(locationText.textContent.trim());
-});
-
-// ✅ stop bubbling from select
-locationSelect.addEventListener("click", (e) => {
-  e.stopPropagation();
-});
-
-// ✅ open map only AFTER selection
-locationSelect.addEventListener("change", () => {
-  const city = locationSelect.value;
-  locationText.textContent = city;
-  openMap(city);
-});
-
-function openMap(city) {
-  if (!mapUrls[city]) return;
-
-  Fancybox.show([
-    {
-      src: mapUrls[city],
-      type: "iframe",
-    },
-  ]);
-}
-
-
   let lastScrollTop = 0;
   const navbar = document.querySelector(".header-sec");
 

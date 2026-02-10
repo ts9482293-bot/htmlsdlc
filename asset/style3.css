@@ -11,7 +11,7 @@
   --font-popins: popins;
 }
 :root {
-  --primary-color: #000000;
+  --primary-color: #242424;
   --border-color: #ffcc00;
   --hover-color: #2662fd;
   --secondary-color: #ffffff;
@@ -213,7 +213,7 @@ a {
   height: 67px;
   border-radius: 100px; */
   /* background: var(--card-background-color); */
-  margin: 0 auto 0 58px;
+  margin: 0 auto 0 24px;
   display: flex;
   align-items: center;
 }
@@ -310,7 +310,7 @@ nav,
 }
 .nav-form{
   position: relative;
-  margin: 0 69px 0 0;
+  margin: 0 24px 0 0;
 }
 #search{
   max-width: 208.97px;
@@ -967,6 +967,7 @@ border-bottom-right-radius: 20px;
 
 .about-content {
   padding-left: 40px;
+  max-width: 609px;
 }
 .about-image img {
   width: 100%;
@@ -1000,8 +1001,8 @@ border-bottom-right-radius: 20px;
 .about-list li {
   display: flex;
   align-items: center;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   color: #2563eb;
   margin-bottom: 16px;
 }
@@ -1015,14 +1016,11 @@ border-bottom-right-radius: 20px;
   height: auto;
   margin-right: 12px;
 }
-.about-content li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #2563eb;
-  margin-bottom: 16px;
+.arrow-icon-24 {
+  width: 18px;
+  height: auto;
+  margin-right: 12px;
+  margin-bottom: 35px;
 }
 
 .about-content li::before {
@@ -1313,12 +1311,12 @@ border-bottom-right-radius: 20px;
 }
 .choose-header>.title1{
   margin-bottom: 111px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin-left: auto;
   max-width: 657px;
 }
 .choose-header>.title1>span{
-  color: var(--primary-color);
+  color: var(--hover-color);
 }
 .choose-header{
   max-width: 700px;
@@ -1361,6 +1359,14 @@ border-bottom-right-radius: 20px;
 .choose-card-header{
   text-align: center;
   margin-bottom: 72px;
+}
+.choose-card-header>.title1>p{
+  display: inline;
+  margin-left: 10px;
+}
+.choose-card-header>.title1{
+  color: var(--hover-color);
+  font-weight: 600;
 }
 .choose-card-header>.title1>span{
   font-size: 20px;
@@ -1456,6 +1462,7 @@ border-bottom-right-radius: 20px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   cursor: pointer;
+  margin: 0 0 20px;
 }
 
 .trend-card:hover {
@@ -1465,7 +1472,7 @@ border-bottom-right-radius: 20px;
 
 .trend-img {
   max-width: 100%;
-  height: 597px;
+  height: 560px;
   border-radius: 14.99px;
   /* overflow: hidden; */
 }
@@ -1484,7 +1491,7 @@ border-bottom-right-radius: 20px;
 }
 
 .trend-content {
-  padding: 26px 40.55px;
+  padding: 26px 40.55px 89px;
   max-width: 630px;
  height: 100%;
 }
@@ -1500,14 +1507,14 @@ border-bottom-right-radius: 20px;
   font-size: 14px;
   line-height: 1.65;
   color: #475569;
-  margin: 3.77px 0;
+  margin: 10px 0;
   max-width: 540px;
 }
 
 .trend-content strong {
   display: block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   color: #0f172a;
   
 }

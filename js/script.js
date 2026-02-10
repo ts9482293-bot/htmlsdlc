@@ -289,49 +289,49 @@ document.getElementById("modalform").addEventListener("submit", function (e) {
   }
 });
 
-const locationBox = document.querySelector(".nav-location");
-const locationSelect = document.getElementById("locationSelect");
-const locationText = document.querySelector(".location-text");
+// const locationBox = document.querySelector(".nav-location");
+// const locationSelect = document.getElementById("locationSelect");
+// const locationText = document.querySelector(".location-text");
 
-const mapUrls = {
-  "Salt Lake, Kolkata":
-    "https://www.google.com/maps?q=Salt+Lake+Kolkata&output=embed",
-  "Delhi":
-    "https://www.google.com/maps?q=Delhi&output=embed",
-  "Mumbai":
-    "https://www.google.com/maps?q=Mumbai&output=embed",
-  "Bengaluru":
-    "https://www.google.com/maps?q=Bengaluru&output=embed",
-};
+// const mapUrls = {
+//   "Salt Lake, Kolkata":
+//     "https://www.google.com/maps?q=Salt+Lake+Kolkata&output=embed",
+//   "Delhi":
+//     "https://www.google.com/maps?q=Delhi&output=embed",
+//   "Mumbai":
+//     "https://www.google.com/maps?q=Mumbai&output=embed",
+//   "Bengaluru":
+//     "https://www.google.com/maps?q=Bengaluru&output=embed",
+// };
 
-function openMap(city) {
-  if (!mapUrls[city]) return;
+// function openMap(city) {
+//   if (!mapUrls[city]) return;
 
-  Fancybox.show([
-    {
-      src: mapUrls[city],
-      type: "iframe",
-    },
-  ]);
-}
+//   Fancybox.show([
+//     {
+//       src: mapUrls[city],
+//       type: "iframe",
+//     },
+//   ]);
+// }
 
-/* Prevent dropdown click from opening map */
-locationSelect.addEventListener("click", function (e) {
-  e.stopPropagation();
-});
+// /* Prevent dropdown click from opening map */
+// locationSelect.addEventListener("click", function (e) {
+//   e.stopPropagation();
+// });
 
-/* 🔹 Open map ONLY when clicking box (not dropdown) */
-locationBox.addEventListener("click", function () {
-  openMap(locationSelect.value);
-});
+// /* 🔹 Open map ONLY when clicking box (not dropdown) */
+// locationBox.addEventListener("click", function () {
+//   openMap(locationSelect.value);
+// });
 
-/* 🔹 Change city → update text + open map */
-locationSelect.addEventListener("change", function (e) {
-  e.stopPropagation();
-  const city = this.value;
-  locationText.textContent = city;
-  openMap(city);
-});
+// /* 🔹 Change city → update text + open map */
+// locationSelect.addEventListener("change", function (e) {
+//   e.stopPropagation();
+//   const city = this.value;
+//   locationText.textContent = city;
+//   openMap(city);
+// });
 
 
 const navLinks = document.querySelectorAll(".nav-link");
