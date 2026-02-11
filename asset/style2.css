@@ -6,6 +6,7 @@
 }
 :root {
   --primary-color: #242424;
+  --sub-title-color:#424242;
   --border-color: #ffcc00;
   --hover-color: #2662fd;
   --secondary-color: #ffffff;
@@ -939,8 +940,11 @@ border-bottom-right-radius: 20px;
   font-weight: 500;
   margin-top: 16px;
 }
+.approach-cont>.title4{
+  text-transform: uppercase;
+}
 .approach-cont > .title2 > span {
-  color: var(--header-color);
+  color: var(--hover-color);
 }
 /* electric-sec */
 .electric-sec {
@@ -951,7 +955,7 @@ border-bottom-right-radius: 20px;
   margin-bottom: 71px;
 }
 .electric-header > .title2 > span {
-  color: var(--header-color);
+  color: var(--hover-color);
 }
 .electric-card {
   max-width: 601px;
@@ -976,8 +980,9 @@ border-bottom-right-radius: 20px;
   object-fit: contain;
 }
 .card-para {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
+  margin: 14px 0 20px;
 }
 .card-box {
   max-width: 541px;
@@ -1047,7 +1052,7 @@ border-bottom-right-radius: 20px;
 }
 /* estimate-sec */
 .estimate-sec {
-  padding: 20px 0 100px;
+  padding: 100px 0 100px;
   background: var(--offcanvsbckground-color);
 }
 .estimate-wraper {
@@ -1062,6 +1067,7 @@ border-bottom-right-radius: 20px;
 }
 .estimate-cont > .title4 {
   margin-top: 25px;
+  text-transform: uppercase;
 }
 .estimate-cont > .title2 > span {
   color: var(--hover-color);
@@ -1141,11 +1147,12 @@ border-bottom-right-radius: 20px;
 .choose-cont {
   max-width: 607px;
 }
-.choose-cont > .title2 {
+.choose-cont > .title4 {
   margin: 8px 0 24px;
+  color: var(--sub-title-color);
 }
 .choose-cont > .title2 > span {
-  color: var(--header-color);
+  color: var(--hover-color);
 }
 .choose-cont > ul {
   margin: 50px 0 53px;
