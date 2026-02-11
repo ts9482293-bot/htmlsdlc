@@ -317,9 +317,10 @@ nav,
   transform: translateY(-30%);
 }
 .follow-link {
-  max-width: 77px;
+  width: 90px;
   font-size: 16px;
 }
+
 .nav-form{
   position: relative;
   margin: 0 24px 0 0;
