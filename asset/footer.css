@@ -235,6 +235,9 @@ ul {
   height: 100%;
   object-fit: contain;
 }
+.mail-list{
+  width: 350px;
+}
 /* --------- END FOOTER SECTION ------------- */
 /* ====================================
 ==================================== */
@@ -315,6 +318,7 @@ ul {
   }
   .footer-cont {
     text-align: center;
+    max-width: 500px;
   }
   .footer-main-cont {
     text-align: center;
@@ -333,6 +337,13 @@ ul {
   .footer-low-img-cont {
     margin: 0 auto;
   }
+  .mail-list{
+  width: 350px;
+  margin: 0 auto;
+}
+.contact-list{
+  max-width: 500px;
+}
 /* --------- START FOOTER SECTION ------- */
   
 }
@@ -350,6 +361,7 @@ ul {
     width: 90px;
     font-size: 12px;
   }
+
 }
 @media screen and (max-width: 576px) {
 
@@ -365,6 +377,12 @@ ul {
     margin-right: auto;
     height: 70px;
   }
+  .footer-link{
+    font-size: 12px;
+  }
+  .mail-list{
+  max-width: 350px;
+}
   .footer-form-cont {
     max-width: 360px;
   }

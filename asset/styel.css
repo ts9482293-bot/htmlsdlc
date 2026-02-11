@@ -576,16 +576,63 @@ border-bottom-right-radius: 20px;
   margin: 0 auto;
   /* display: flex; */
 }
-.form-drop{
-      width: 556px;
-    height: 48px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    padding-left: 20px;
-    margin: 0 auto 24px;
-    background: var(--email-background-color);
+/* Remove Bootstrap default caret */
+.dash-drop::after {
+  display: none;
 }
+
+.form-drop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dash-drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #f5f7fb;
+  border-radius: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  min-width: 200px;
+}
+
+/* Right arrow icon */
+.drop-icon {
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when dropdown opens */
+.dropdown.show .drop-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dash-menu {
+  border-radius: 12px;
+  padding: 8px 0;
+}
+
+.dash-menu .dropdown-item {
+  padding: 10px 18px;
+  font-size: 14px;
+}
+
+
+/* .dash-menu{
+  background: var(--figma-blue-50) !important;
+}
+.dash-drop{
+  color: var(--primary-color);
+}
+.dash-drop::after {
+ margin-left: 170px;
+} */
 .modal-title {
   /* margin: 0 0 0 auto; */
   text-align: center;
@@ -884,7 +931,7 @@ border-bottom-right-radius: 20px;
 } */
 .btn-cont{
   text-align: center;
-  margin: 32px 0 0;
+  margin: 24px 0 ;
 }
 .input-cont-para {
   max-width: 271px;
@@ -2463,6 +2510,9 @@ border-bottom-right-radius: 20px;
   height: 100%;
   object-fit: contain;
 }
+.mail-list{
+  width: 350px;
+}
 
 /* media-quarry */
 @media screen and (max-width: 1750px) {
@@ -3151,6 +3201,34 @@ border-bottom-right-radius: 20px;
   .choose-container {
     margin-top: 1450px;
   }
+  .footer-cont {
+    text-align: center;
+    max-width: 500px;
+  }
+  .footer-main-cont {
+    text-align: center;
+  }
+  .footer-social > ul {
+    max-width: 248px;
+    margin: 0 auto;
+  }
+  .slider-card-img {
+    max-width: 150px;
+  }
+  .side-box {
+    max-width: 344px;
+    margin: 0 auto;
+  }
+  .footer-low-img-cont {
+    margin: 0 auto;
+  }
+  .mail-list{
+  width: 350px;
+  margin: 0 auto;
+}
+.contact-list{
+  max-width: 500px;
+}
 }
 @media screen and (max-width: 650px) {
   .back-circle {
@@ -3420,6 +3498,9 @@ border-bottom-right-radius: 20px;
   .accordion {
     height: 500px;
   }
+   .footer-link{
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .social-list > li {
@@ -3590,7 +3671,7 @@ border-bottom-right-radius: 20px;
     width: 90px;
   }
   #email {
-    width: 230px;
+    width: 190px;
   }
 }
 @media screen and (max-width: 360px) {
