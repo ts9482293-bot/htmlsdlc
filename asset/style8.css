@@ -276,6 +276,7 @@ nav,
 .social-link {
   color: var(--primary-color);
   transition: 0.6s all linear;
+  font-size: 20px;
 }
 .nav-top-link > span {
   margin-left: 15px;
@@ -287,7 +288,7 @@ nav,
   transform: translateY(-30%);
 }
 .follow-link {
-  max-width: 77px;
+  width: 77px;
   font-size: 16px;
 }
 .nav-form{
@@ -755,6 +756,9 @@ border-bottom-right-radius: 20px;
 
 
 /* banner-sec */
+.banner-sec{
+  padding: 50px 0 0;
+}
 .banner-cont {
   text-align: center;
 }
