@@ -266,3 +266,16 @@ function openMap(city) {
     },
   ]);
 }
+
+// dash-toggle
+
+document.querySelectorAll(".dropdown-item").forEach(item => {
+  item.addEventListener("click", function () {
+    const role = this.dataset.role;
+    document.querySelector(".drop-text").innerText =
+      role.charAt(0).toUpperCase() + role.slice(1);
+
+    document.getElementById("selectedRole").value = role;
+  });
+});
+
