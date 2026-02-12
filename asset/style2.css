@@ -933,6 +933,7 @@ html {
   } */
   .estimate-cont {
     text-align: center;
+    margin: 0 auto;
   }
   .estimate-cont > ul {
     max-width: 350px;
