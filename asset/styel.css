@@ -985,6 +985,7 @@ border-bottom-right-radius: 20px;
 .banner-sec {
   position: relative;
   margin-top: 100px;
+  padding: 50px 0 0 ;
 }
 .banner-sec::after {
   clip-path: polygon(54% 0, 100% 0, 100% 100%, 0 100%, 27% 48%);
@@ -2364,7 +2365,7 @@ border-bottom-right-radius: 20px;
 }
 .footer-form {
   text-align: center;
-  margin: 32px 0 155px;
+  margin: 32px 0 70px;
 }
 .footer-form-cont {
   max-width: 774px;

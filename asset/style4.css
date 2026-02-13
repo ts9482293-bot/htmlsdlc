@@ -386,7 +386,7 @@ html {
 }
 .footer-form {
   text-align: center;
-  margin: 32px 0 155px;
+  margin: 32px 0 70px;
 }
 .footer-form-cont {
   max-width: 774px;
@@ -670,7 +670,7 @@ html {
     height: auto;
   }
   .card-img{
-    height: auto;
+    /* height: auto; */
   }
   .quote-header{
     text-align: center;
@@ -1029,6 +1029,9 @@ html {
   }
   .card-section {
     padding-top: 50px;
+  }
+  .card-img{
+    height: auto;
   }
   .best-section {
     padding-top: 50px;

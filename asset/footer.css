@@ -82,6 +82,9 @@ ul {
   background: var(--primary-color);
   padding: 70px 0 30px;
 }
+.footer-form{
+  margin: 32px auto 70px;
+}
 .footer-header {
   text-align: center;
   color: var(--header-color);
