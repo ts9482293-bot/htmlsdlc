@@ -146,7 +146,7 @@ html {
 }
 /* ===card-section */
 .card-section {
-  padding: 100px 0 20px;
+  padding: 100px 0 100px;
   background: var(--card-color);
 }
 .card {
